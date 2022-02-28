@@ -19,3 +19,8 @@ h1 {
     font-size: 30px;
     font-size: 3vw;
 }
+
+.paimg > .logo{
+    display: table-cell;
+    vertical-align: top;
+}
