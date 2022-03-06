@@ -55,18 +55,21 @@ renderer.render( scene, camera );
 
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js';
 
-let camera, scene, renderer;
+let camera, scene, renderer, controls, canvas;
 let gui;
 
 init();
 render();
 
-function init() {
-    const container = document.createElement( 'div' );
-    document.body.appendChild( container );
 
-    camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
+function init() {
+    canvas = document.querySelector('canvas.webgl')
+    // const container = document.createElement( 'div' );
+    // document.body.appendChild( container );
+
+    camera = new THREE.PerspectiveCamera( 45, (window.innerWidth) / window.innerHeight, 0.25, 20 );
     camera.position.set( 2.5, 1.5, 3.0 );
+
 
     scene = new THREE.Scene();
 
@@ -78,6 +81,9 @@ function init() {
         '../Assets/JustBoard.glb',
         // called when the resource is loaded
         function ( gltf ) {
+
+            gltf.scene.scale.set(0.5,0.5,0.5) // scale here
+
             scene.add( gltf.scene );
 
             render();
@@ -93,30 +99,41 @@ function init() {
     );
 
 
-    renderer = new THREE.WebGLRenderer( { antialias: true } );
-    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer = new THREE.WebGLRenderer( { antialias: true, alpha:true, canvas: canvas } );
+    renderer.setPixelRatio( (window.innerWidth) / window.innerHeight );
     renderer.setSize( window.innerWidth, window.innerHeight );
-    renderer.toneMapping = THREE.ACESFilmicToneMapping; //QWE
-    renderer.toneMappingExposure = 1;
+    // renderer.toneMapping = THREE.ACESFilmicToneMapping; //QWE
+    // renderer.toneMappingExposure = 1;
     renderer.outputEncoding = THREE.sRGBEncoding;
-    container.appendChild( renderer.domElement );
+    // container.appendChild( renderer.domElement );
 
     var ambientLight = new THREE.AmbientLight( 0x404040, 5);
     ambientLight.position.set( 2, 2, 2 );
     scene.add( ambientLight );
 
-    const controls = new OrbitControls( camera, renderer.domElement );
+    controls = new OrbitControls( camera, renderer.domElement );
     controls.addEventListener( 'change', render ); // use if there is no animation loop
-    controls.minDistance = 2;
+    controls.enableZoom = false;
+    controls.minDistance = 10;
     controls.maxDistance = 10;
-    controls.target.set( 0, 0.5, - 0.2 );
+    controls.target.set( 0, 0, 0);
+    // controls.autoRotate = true;
+    // controls.autoRotateSpeed = 4;
     controls.update();
 
     window.addEventListener( 'resize', onWindowResize );
 }
 
+// var animate = function () {
+//     requestAnimationFrame( animate );
+//
+//     controls.update();
+//
+//     renderer.render( scene, camera );
+// };
+
 function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.aspect = (window.innerWidth) / window.innerHeight;
     camera.updateProjectionMatrix();
 
     renderer.setSize( window.innerWidth, window.innerHeight );
