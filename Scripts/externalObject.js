@@ -1,59 +1,4 @@
-// import * as THREE from 'https://cdn.skypack.dev/three@v0.138.3/build/three.module.js';
-// import { GLTFLoader } from 'https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js';
-/*
-const scene = new THREE.Scene();
-scene.background = new THREE.Color( 0xfffff0 );
-var camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
-camera.position.set( 2.5, 1.5, 3.0 );
-
-var renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, window.innerHeight );
-renderer.outputEncoding = THREE.sRGBEncoding;
-document.body.appendChild( renderer.domElement );
-
-
-var ambientLight = new THREE.AmbientLight( 0x404040, 5);
-ambientLight.position.set( 0, 0, 0 );
-
-const loader = new THREE.GLTFLoader();
-
-// Load a glTF resource
-loader.load(
-    // resource URL
-    '../Assets/BoardScene.glb',
-    // called when the resource is loaded
-    function ( gltf ) {
-        scene.add( gltf.scene );
-    },
-    // called while loading is progressing
-    function ( xhr ) {
-        console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
-    },
-    // called when loading has errors
-    function ( error ) {
-        console.log( 'An error happened' );
-    }
-);
-
-scene.add( ambientLight );
-renderer.render( scene, camera );
-
-// var animate = function () {
-//     requestAnimationFrame( animate );
-//
-//     cube.rotation.x += 0.01;
-//     cube.rotation.y += 0.01;
-//
-//     cube2.rotation.x += 0.01;
-//     cube2.rotation.y += 0.02;
-//
-//
-// };
-//
-// animate();
-/**/
-
-// import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js';
+//TODO: when you click on a board it should flip
 
 /**
  * Sizes
@@ -136,14 +81,15 @@ function init() {
     // Load a glTF resource
     loader.load(
         // resource URL
-        '../Assets/JustBoard.glb',
+        '../Assets/BigCreteClock.glb',
         // called when the resource is loaded
         function ( gltf ) {
 
             board2 = gltf.scene;
-            board2.scale.set(0.5,0.5,0.5) // scale here
-            board2.position.set(-0.25, -objectDistance*1, 0);
-            board2.rotateX(Math.PI / 4);
+            board2.scale.set(1.5,1.5,1.5) // scale here
+            board2.position.set(0, -(objectDistance + 2), 0);
+            board2.rotateY(Math.PI);
+            //board2.rotateX(Math.PI / 4);
 
             scene.add( board2 );
 
@@ -186,9 +132,6 @@ function init() {
     );
 
     boards = [board1, board2, board3];
-
-
-
 
 
     /**
@@ -260,6 +203,8 @@ function init() {
 
         // Animate camera
         camera.position.y = - scrollY / sizes.height * (objectDistance)
+
+        //boards[currentSection].rotation.x += (scrollY * 0.1);
 
         const parallaxX = cursor.x * 0.5;
         const parallaxY = - cursor.y * 0.5;

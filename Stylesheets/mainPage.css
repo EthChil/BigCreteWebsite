@@ -19,15 +19,23 @@ html
 
 .section
 {
-    display: flex;
+    display: inline-block;
     align-items: start;
     height: 100vh;
     position: relative;
     font-family: 'Cabin', sans-serif;
+    font-weight: bold;
     color: white;
     text-transform: uppercase;
     font-size: 7vmin;
     padding-left: 10%;
     padding-right: 10%;
     will-change: transform;
+}
+
+.description
+{
+    font-weight: 100;
+    font-size: 3vmin;
+    /*text-transform: none;*/
 }
