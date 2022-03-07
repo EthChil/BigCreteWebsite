@@ -1,7 +1,7 @@
 html, body {
     background-color: rgb(0, 0, 0);
     overflow-x: hidden;
-    height: 1000px;
+    height: 900px;
 }
 
 div.fixed {
@@ -15,9 +15,15 @@ div.fixed {
     margin-left: -500px; /* Negative half of width. */
 }
 
-.diode {
-    width: 375px;
-    height: 270px;
+div.diode {
+    position: fixed;
+    width: 100px;
+    height: 200px;
+    margin-top: -124px; /* Negative half of height. */
+    margin-left: 14px; /* Negative half of width. */
+    top: 60%;
+    left: 50%;
+    z-index: 1;
 }
 
 .container {
