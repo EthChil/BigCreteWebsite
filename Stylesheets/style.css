@@ -4,6 +4,18 @@ html, body {
     height: 2000px;
 }
 
+div.highestLvl {
+    z-index: 2;
+    position: fixed;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+    top: 60%;
+    left: 50%;
+    margin-top: 10px; /* Negative half of height. */
+    margin-left: -500px; /* Negative half of width. */
+}
+
 div.fixed {
     position: fixed;
     text-align: center;
