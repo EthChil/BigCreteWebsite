@@ -10,7 +10,7 @@ window.addEventListener('scroll', () =>
         document.getElementById('Schottky').style.marginTop = "-15px";
 
     if(scrollY > 109) {
-        document.getElementById("entranceText").innerHTML = "<br> Hitting the Crete";
+        document.getElementById("entranceText").innerHTML = "Hitting the Crete";
 
         setTimeout(() => {
             window.location.href = "main.html";
