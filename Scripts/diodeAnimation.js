@@ -8,6 +8,11 @@ window.addEventListener('scroll', () =>
 
     console.log(scrollY)
 
-    if(scrollY > 109)
-        window.location.href = "main.html";
+    if(scrollY > 109) {
+        document.getElementById("entranceText").innerHTML = "<br> Hitting the Crete";
+
+        setTimeout(() => {
+            window.location.href = "main.html";
+        }, 1250);
+    }
 })
