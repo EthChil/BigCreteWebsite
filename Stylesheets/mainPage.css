@@ -4,6 +4,31 @@
     padding: 0;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+button {
+    margin-left: 33vw;
+    text-align: right;
+    z-index: 1;
+    background-color: black;
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    color: #6ab5ff;
+    border: none;
+    font-size: 5vmin;
+}
+
+button.b2 {
+    margin-left: 30vw;
+}
+
+button.b3 {
+    margin-left: 38vw;
+}
+
 html
 {
     background: black;
@@ -17,8 +42,8 @@ html
 }
 
 
-.section
-{
+.section {
+    z-index: 1;
     display: inline-block;
     align-items: start;
     height: 100vh;
@@ -33,9 +58,59 @@ html
     will-change: transform;
 }
 
+ul {
+    list-style-type: circle;
+    margin-left: 2vmin;
+}
+
 .description
 {
     font-weight: 100;
     font-size: 3vmin;
     /*text-transform: none;*/
+}
+
+/**
+MODAL STUFF
+ */
+
+/* The Modal (background) */
+.modal {
+    border: none;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    color: white;
+    font-weight: 200;
+    font-family: 'Cabin', sans-serif;
+    font-size: 2vmin;
+    background-color: rgba(56, 56, 56, 0.9);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: none;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
