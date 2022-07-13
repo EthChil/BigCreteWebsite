@@ -108,7 +108,7 @@ function init() {
     // Load a glTF resource
     loader.load(
         // resource URL
-        '../Assets/JustBoard.glb',
+        '../Assets/Calculator-Voltage-Board.glb',
         // called when the resource is loaded
         function ( gltf ) {
 
