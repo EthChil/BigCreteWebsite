@@ -55,7 +55,7 @@ function init() {
     // Load a glTF resource
     loader.load(
         // resource URL
-        '../Assets/FPGA PONG Proper.glb',
+        '../Assets/FPGA-PONG-Proper.glb',
         // called when the resource is loaded
         function ( gltf ) {
 
