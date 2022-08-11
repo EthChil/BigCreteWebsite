@@ -8,8 +8,12 @@ button:hover{
     cursor: pointer;
 }
 
+h1 {
+    font-size: 10vmin;
+}
+
 button {
-    margin-left: 33vw;
+    margin-left: 5vw;/*33*/
     text-align: right;
     z-index: 1;
     background-color: black;
@@ -22,11 +26,11 @@ button {
 }
 
 button.b2 {
-    margin-left: 30vw;
+    margin-left: 3vw;
 }
 
 button.b3 {
-    margin-left: 38vw;
+    margin-left: 7vw;/*38*/
 }
 
 html
