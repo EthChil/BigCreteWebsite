@@ -1,5 +1,10 @@
 //TODO: when you click on a board it should flip
 
+    import * as THREE from 'three';
+    import * as GLTF from 'gltf';
+    import * as ROOM from 'room';
+
+
 /**
  * Sizes
  */
@@ -8,7 +13,7 @@ const sizes = {
     height: window.innerHeight
 }
 
-let camera, cameraGroup, scene, renderer, controls, canvas;
+let camera, cameraGroup, scene, renderer, controls, canvas, envGen;
 let gui;
 
 let board1;
@@ -28,41 +33,48 @@ function init() {
 
     scene = new THREE.Scene();
 
+
+
     /**
      * Camera
      */
     // Group
-    cameraGroup = new THREE.Group()
+    cameraGroup = new THREE.Group();
     scene.add(cameraGroup);
 
     // Base camera
-    camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.25, 50)
+    camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.25, 50);
     camera.position.set( 0, 4, 9 );//x is left right, y is up down, z is in out
     cameraGroup.add(camera);
 
     renderer = new THREE.WebGLRenderer( { antialias: true, alpha:true, canvas: canvas } );
+    renderer.physicallyCorrectLights = true
     renderer.setPixelRatio( (window.innerWidth) / window.innerHeight );
     renderer.setSize( window.innerWidth, window.innerHeight );
     renderer.outputEncoding = THREE.sRGBEncoding;
+    renderer.toneMapping = THREE.ReinhardToneMapping;
 
-    var ambientLight = new THREE.AmbientLight( 0x404040, 5);
+    var ambientLight = new THREE.AmbientLight( 0x404040, 10);
     ambientLight.position.set( 2, 2, 2 );
     scene.add( ambientLight );
 
-    const loader = new THREE.GLTFLoader();
+    const loader = new GLTF.GLTFLoader();
 
+    envGen = new THREE.PMREMGenerator(renderer);
+    envGen.compileEquirectangularShader();
+    scene.environment = envGen.fromScene(new ROOM.RoomEnvironment()).texture;
 
     // Load a glTF resource
     loader.load(
         // resource URL
-        '../Assets/FPGA-PONG-Proper.glb',
+        'Assets/Website-GLB/FPGA-PONG-Proper.glb',
         // called when the resource is loaded
         function ( gltf ) {
-
             board1 = gltf.scene;
+
             board1.scale.set(0.5,0.5,0.5) // scale here
             board1.position.set(-0.25, -objectDistance*0, 0);
-            board1.rotateX(Math.PI / 4);
+            board1.rotateX(-Math.PI / 5);
 
             scene.add( board1 );
 
@@ -81,7 +93,7 @@ function init() {
     // Load a glTF resource
     loader.load(
         // resource URL
-        '../Assets/BigCreteClock.glb',
+        'Assets/Website-GLB/BigCreteClock.glb',
         // called when the resource is loaded
         function ( gltf ) {
 
@@ -108,13 +120,13 @@ function init() {
     // Load a glTF resource
     loader.load(
         // resource URL
-        '../Assets/Calculator-Voltage-Board.glb',
+        'Assets/Website-GLB/Calculator-Voltage-Board.glb',
         // called when the resource is loaded
         function ( gltf ) {
 
             board3 = gltf.scene;
             board3.scale.set(0.5,0.5,0.5) // scale here
-            board3.position.set(-0.25, -objectDistance*2, 0);
+            board3.position.set(-0.25, -objectDistance*2, 2);
             board3.rotateX(Math.PI / 4);
 
             scene.add( board3 );
