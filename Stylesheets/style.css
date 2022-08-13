@@ -29,8 +29,8 @@ div.fixed {
 
 div.diode {
     position: fixed;
-    width: 100px;
-    height: 200px;
+    /*width: 100px;*/
+    /*height: 200px;*/
     margin-top: -124px; /* Negative half of height. */
     margin-left: 14px; /* Negative half of width. */
     top: 60%;

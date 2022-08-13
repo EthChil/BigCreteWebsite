@@ -45,6 +45,14 @@ html
     left: 0;
 }
 
+.LOGO {
+    position: fixed;
+    /*width: 151.875vw;*/
+    /*height: 109.35vw;*/
+    margin-top: 0px; /* Negative half of height. */
+    margin-left: 0px; /* Negative half of width. */
+    z-index: 2;
+}
 
 .section {
     z-index: 1;
