@@ -490,7 +490,7 @@ main {
 
 .spacer {
     display: block;
-    height: 13vh;
+    height: 15vh;
 }
 
 .cards_container {
@@ -598,6 +598,7 @@ figcaption {
     font-size: 3em;
     white-space: normal;
     overflow: auto;
+    color: black;
 }
 
 .portfolio-subtitle {
