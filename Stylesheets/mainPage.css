@@ -15,7 +15,7 @@ h1 {
 button {
     margin-left: 5vw;/*33*/
     text-align: right;
-    z-index: 1;
+    z-index: 4;
     background-color: black;
     text-transform: uppercase;
     font-family: 'Cabin', sans-serif;
@@ -45,6 +45,21 @@ html
     left: 0;
 }
 
+.LOGO {
+    position: fixed;
+    /*allows clicking through the div*/
+    pointer-events: none;
+    /*width: 151.875vw;*/
+    /*height: 109.35vw;*/
+    margin-top: 0px; /* Negative half of height. */
+    margin-left: 0px; /* Negative half of width. */
+    z-index: 2;
+}
+
+.HOMELINK {
+    /*allow clicking the image*/
+    pointer-events: all;
+}
 
 .section {
     z-index: 1;

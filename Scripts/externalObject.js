@@ -73,7 +73,7 @@ function init() {
             board1 = gltf.scene;
 
             board1.scale.set(0.5,0.5,0.5) // scale here
-            board1.position.set(-0.25, -objectDistance*0, 0);
+            board1.position.set(-0.25, -objectDistance*0, -2);
             board1.rotateX(-Math.PI / 5);
 
             scene.add( board1 );
