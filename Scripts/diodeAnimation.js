@@ -13,7 +13,7 @@ window.addEventListener('scroll', () =>
         document.getElementById("entranceText").innerHTML = "Hitting the Crete";
 
         setTimeout(() => {
-            window.location.href = "main.html";
+            window.location.href = "Circuit.html";
         }, 1250);
     }
 })
