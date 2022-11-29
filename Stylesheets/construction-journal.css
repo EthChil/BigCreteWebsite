@@ -1,0 +1,65 @@
+
+html
+{
+    background: black;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.LOGO {
+    display: inline-block;
+    width: 20vw;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+a {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    color: white;
+}
+
+a:hover {
+    color: #6ab5ff;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 2vw;
+}
+
+ul li:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -2.5vw;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+div.left {
+    width: 50%;
+    height: 30vw;
+    float: left;
+}
+
+div.right {
+    width: 50%;
+    height: 30vw;
+    float: right;
+}
