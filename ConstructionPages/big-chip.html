@@ -10,7 +10,7 @@
 
 <header class="filter_header">
     <div class="LOGO">
-        <a href="../circuit.html">
+        <a href="../construction.html">
             <img src="../Assets/Website-GLB/BigCreteLOGO.bmp" alt="big crete crane logo" width="50%" height="auto">
         </a>
     </div>
@@ -47,7 +47,15 @@ maybe put these side by side
 </div>
 
 
-<h2>heading</h2>
+<h2>Project Journal</h2>
+<h3>First Layout - December 2022 (projected)</h3>
+<h3>Generated Cell Library - December 2022 (projected)</h3>
+<h3>Investigate VTR open source router - December 2022 (projected)</h3>
+<h3>Cells and interconnect - April 2022</h3>
+<p>With a rudimentry gerber generator the next question is how the board will be laid out, I am thinking of using pre routed cells for the logic groups with fixed locations that wires connect to standardized between all cells then with vertical and horizontal interconnect tracks any connection can be made. The thought is that on the top layer are vertical tracks and horizontal tracks are on the bottom layer and the direction can be changed by placing a via. This will restrict and vertical or horizontal conductor to be fixed to that signals but that's a reasonable constraint for now I think.</p>
+<h3>Robust Gerber Generation - April 2022</h3>
+<p>Read through the Gerber standard and discovered how basic it is basically painting shapes around to generate patterns. I then looked for libraries that implement gerber generation in python and found nothing good so I built my own.</p>
+
 
 </body>
 </html>

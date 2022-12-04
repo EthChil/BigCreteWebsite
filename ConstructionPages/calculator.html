@@ -4,17 +4,67 @@
     <meta charset="UTF-8">
     <title>Big Crete Engineering</title>
     <meta name="description" content="Big Crete Engineering is dedicated to the bleeding edge of electronics and design, we live and die on the crete">
-    <link rel="stylesheet" type="text/css" href="Stylesheets/about.css">
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/construction-journal.css">
 </head>
 <body>
 
 <header class="filter_header">
     <div class="LOGO">
-        <a href="circuit.html">
-            <img src="Assets/Website-GLB/BigCreteLOGO.bmp" alt="big crete crane logo" width="50%" height="auto">
+        <a href="../construction.html">
+            <img src="../Assets/Website-GLB/BigCreteLOGO.bmp" alt="big crete crane logo" width="50%" height="auto">
         </a>
     </div>
 </header>
+
+<!--
+- Name of project
+maybe put these side by side
+- quick synopsis of project
+- list of project facts
+
+- list of upcomming project goals with dates
+- journal of previous dates with the expected and actual with a writeup and images
+-->
+
+
+<h1>Big Crete Calculator</h1>
+
+<div style="width: 100%;">
+    <div class="left">
+        <h2>Overview</h2>
+        <p>The Big Crete Calculator is a project for me to develop the most bizarre, overbuilt, over engineered, beast of a calculator I can. The idea was birthed when I realized how nice it is to use numpads for numerical tasks and wondered why no one had built a fullsize mechanical numpad into a calculator yet so I decided I would. A little feature creep later and I was targeting a full brass construction LCD display and an FPGA for the compute. Completely overkill and unnecessary but I intend for this to be my magnum opus.</p>
+    </div>
+    <div class="right">
+        <h2>Target Specs</h2>
+        <ul>
+            <li>Xilinx Artix-7 A35T FPGA</li>
+            <li>4GB of on board DDR3 RAM</li>
+            <li>Thick CNC machined front and back brass panels</li>
+            <li>USB-C for charging and programming</li>
+            <li>4" full colour IPS LCD screen</li>
+            <li>Gateron Green Mechanical Switches with individually addressable RGD lighting</li>
+            <li>Large 4Ah lithium battery</li>
+        </ul>
+    </div>
+</div>
+
+
+<h2>Project Journal</h2>
+
+<h3>Calculator Assembled - April 2023 (projected)</h3>
+<h3>First Motherboard PCB - February 2023 (projected)</h3>
+<h3>Mechanical Fit Test - February 2023 (projected)</h3>
+<h3>Power Supply Validation - January 2023 (projected)</h3>
+
+<h3>Driving the LCD - September 2022</h3>
+<p>Driving LCD panels appears to be quite tricky I can get some images to show but it's extremely hit or miss. I don't have the equipment to properly investigate the electrical interfaces due to how highspeed they are and the documentation for the panels I have is extremely short. I'm investigating alternatives that might be more robust and more commonly used.</p>
+
+<h3>Machined Back Panels - September 2022</h3>
+<p>I got a set of prototype back panels machined and unfortunately they came out a bit rough and I also realized just how large this calculator is and how thick it will be. I'm investigating some ways to shrink the thickness but I do want this to be large and a little insane.</p>
+
+<h3>Testing V1 Switchboard - August 2022</h3>
+<p>The V1 switchboard had a couple problems, one of the switches was misplaced specifically the enter key it was shifted up a bit too far and hit the one above it. Additionally some traces were connected incorrectly and the conductors were reversed. Luckily all these problems were minor and the underlying circuit has been validated. The LEDs also get plenty bright which is great.</p>
+
 
 
 </body>
