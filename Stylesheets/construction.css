@@ -5,8 +5,20 @@ html
 }
 
 .LOGO {
-    display: inline-block;
-    width: 20vw;
+    position: absolute;
+    /*allows clicking through the div*/
+    pointer-events: none;
+    /*width: 151.875vw;*/
+    /*height: 109.35vw;*/
+    margin-top: 0px; /* Negative half of height. */
+    margin-left: 0px; /* Negative half of width. */
+    z-index: 2;
+}
+
+.construction-links {
+    position: absolute;
+    top: 20vw;
+    width: 100%;
 }
 
 img {

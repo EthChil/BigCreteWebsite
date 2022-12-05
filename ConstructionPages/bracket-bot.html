@@ -4,18 +4,62 @@
     <meta charset="UTF-8">
     <title>Big Crete Engineering</title>
     <meta name="description" content="Big Crete Engineering is dedicated to the bleeding edge of electronics and design, we live and die on the crete">
-    <link rel="stylesheet" type="text/css" href="Stylesheets/about.css">
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/construction-journal.css">
 </head>
 <body>
 
 <header class="filter_header">
     <div class="LOGO">
-        <a href="circuit.html">
-            <img src="Assets/Website-GLB/BigCreteLOGO.bmp" alt="big crete crane logo" width="50%" height="auto">
+        <a href="../construction.html">
+            <img src="../Assets/Website-GLB/BigCreteLOGO.bmp" alt="big crete crane logo" width="50%" height="auto">
         </a>
     </div>
 </header>
 
+<!--
+- Name of project
+maybe put these side by side
+- quick synopsis of project
+- list of project facts
+
+- list of upcomming project goals with dates
+- journal of previous dates with the expected and actual with a writeup and images
+-->
+
+
+<h1>Bracket Bot</h1>
+
+<div style="width: 100%;">
+    <div class="left">
+        <h2>Overview</h2>
+        <p>Bracket Bot is a collab between Big Crete, Big Brocc (Clayton Haight), and Big Brocc (Brian Machado). The project is inspired by the comma body and is a learning opportunity for us, we are working to build a low cost inverted pendulum robot with some form of autonomous capabilities so it's able to navigate buildings without hitting people or things.</p>
+    </div>
+    <div class="right">
+        <h2>Target Specs</h2>
+        <ul>
+            <li>Hoverboard hub motors</li>
+            <li>NVIDIA Jetson for doing control and compute from camera stream</li>
+            <li>Self balancing</li>
+            <li>Fully custom construction</li>
+        </ul>
+    </div>
+</div>
+
+
+<h2>Project Journal</h2>
+
+<h3>Robust Balancing - February 2023 (projected)</h3>
+<h3>Try ODrive - January 2023 (projected)</h3>
+<h3>Switch back to hoverboard controllers - January 2023 (projected)</h3>
+
+<h3>First Balance (kind of) - August 2022</h3>
+<p>With the motor controllers working and libraries written to talk to all the sensors we can run our first balancing tests. Using simple PID loops we were able to get it to balance but it isn't robust to large disturbances we think this is due to lag in the control loop. Further investigation is needed but we are all off to cali so we will pick it up in 4 months from now.</p>
+
+<h3>Trinamics Working - August 2022</h3>
+<p>After much work we finally have the Trinamic drivers working. We are able to control them open loop which isn't great but at least it's progress I don't know if we are doing something wrong or if the trinamic drivers are just buggy but we see a lot of strange non repeatable behaviour out of them.</p>
+
+<h3>Trinamic Pain - July 2022</h3>
+<p>The Trinamic tuning utility is extremely buggy and difficult to run, this is causing a lot of problems for us and we are having huge problems trying to get them to work in velocity mode. Switching from hall sensors to encoders helped but they are still extremely buggy.</p>
 
 </body>
 </html>

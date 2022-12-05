@@ -78,7 +78,7 @@ nav ul li { /*each list element*/
     display: inline-block;
     font-size: 1.25em;
     padding: 5px 0px;
-    color: #363636;
+    color: white;
 }
 
 .nav_list a {
@@ -89,7 +89,7 @@ footer ul li { /*each list element*/
     display: inline;
     font-size: 1.25em;
     padding: 0 10px;
-    color: #363636;
+    color: white;
 }
 
 
@@ -100,8 +100,8 @@ hr { /*horizontal line*/
     margin-left: 0px;
     height: 4px;
     border-width: 0;
-    color: #363636;
-    background-color: #363636;
+    color: white;
+    background-color: white;
 }
 
 .small-hr {
@@ -199,7 +199,7 @@ a {
     font-style: normal;
     font-weight: 600;
     text-decoration: none;
-    color: #363636;
+    color: white;
 }
 
 a:hover {
@@ -394,7 +394,7 @@ a p {
     font-family:'Helvetica', 'Arial';
     font-size: 1.25em;
     line-height: 1.25em;
-    color: #363636;
+    color: white;
 }
 
 h1 {
@@ -543,7 +543,7 @@ figcaption {
     font-family:'Helvetica', 'Arial';
     font-size: 1.25em;
     line-height: 1.25em;
-    color: #363636;
+    color: white;
 }
 
 .date {

@@ -4,18 +4,65 @@
     <meta charset="UTF-8">
     <title>Big Crete Engineering</title>
     <meta name="description" content="Big Crete Engineering is dedicated to the bleeding edge of electronics and design, we live and die on the crete">
-    <link rel="stylesheet" type="text/css" href="Stylesheets/about.css">
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/construction-journal.css">
 </head>
 <body>
 
 <header class="filter_header">
     <div class="LOGO">
-        <a href="circuit.html">
-            <img src="Assets/Website-GLB/BigCreteLOGO.bmp" alt="big crete crane logo" width="50%" height="auto">
+        <a href="../construction.html">
+            <img src="../Assets/Website-GLB/BigCreteLOGO.bmp" alt="big crete crane logo" width="50%" height="auto">
         </a>
     </div>
 </header>
 
+<!--
+- Name of project
+maybe put these side by side
+- quick synopsis of project
+- list of project facts
+
+- list of upcomming project goals with dates
+- journal of previous dates with the expected and actual with a writeup and images
+-->
+
+
+<h1>Big Crete Raytracer</h1>
+
+<div style="width: 100%;">
+    <div class="left">
+        <h2>Overview</h2>
+        <p>As one of my first FPGA projects this one has been in development for a while largely due to me constantly going back and re-architecting it. The goal of this project is to make a digital design that can raytrace a basic scene completely in hardware with no softcore. This means scene geometry is stored in bram and is directly used as an input to generate the scene. For now the goal is a sphere with a single light source and a ground plane.</p>
+    </div>
+    <div class="right">
+        <h2>Target Specs</h2>
+        <ul>
+            <li>720p rendering</li>
+            <li>Double buffered frames in ram</li>
+            <li>Display over VGA for it's simplicity</li>
+            <li>60fps video output regardless of raytracing compute time</li>
+            <li>Physically accurate raytracing</li>
+        </ul>
+    </div>
+</div>
+
+
+<h2>Project Journal</h2>
+<h3>First Output - (On Hold)</h3>
+<h3>Scene Representation - (On Hold)</h3>
+<h3>RLU (Ray tracing Logic Unit) - (On Hold)</h3>
+
+<h3>ON HOLD</h3>
+<p>This project is currently on hold while I finish the Big Crete Calculator, the goal is to develop this for the Big Crete Calculator not for a VGA display.</p>
+
+<h3>Custom DAC Board - April 2021</h3>
+<p>I designed and ordered a custom DAC PCB with a DAC chip capable of driving the display over VGA at full 24bit colour.</p>
+
+<h3>Double Buffered Frames in RAM - March 2021</h3>
+<p>This was a surprisingly challenging milestone as the RAM isn't fast enough to feed the display so a number of buffering stages and state machines were added to coordinate between when data needs to be pulled for updating the display and writing newly generated pixels to memory.</p>
+
+<h3>Display Output - March 2021</h3>
+<p>First step was to build an RTL module capable of driving a display over VGA. Since VGA is analog I cut up a VGA cable and built a rudimentary DAC using resistors on a breadboard to get a simple 6bit colour output for testing.</p>
 
 </body>
 </html>

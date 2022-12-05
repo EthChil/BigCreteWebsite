@@ -40,16 +40,20 @@ ul li:before {
     margin-left: -2.5vw;
 }
 
-p {
-    font-size: 1.5vw;
-}
-
 h1 {
     font-size: 4vw;
 }
 
 h2 {
     font-size: 3vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+p {
+    font-size: 1.5vw;
 }
 
 div.left {
