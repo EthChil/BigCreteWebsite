@@ -7,12 +7,12 @@ html
 .LOGO {
     position: absolute;
     /*allows clicking through the div*/
-    pointer-events: none;
+    pointer-events: auto;
     /*width: 151.875vw;*/
     /*height: 109.35vw;*/
     margin-top: 0px; /* Negative half of height. */
     margin-left: 0px; /* Negative half of width. */
-    z-index: 2;
+    z-index: 1;
 }
 
 .construction-links {
@@ -22,6 +22,7 @@ html
 }
 
 img {
+    z-index: -1;
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
