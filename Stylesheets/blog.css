@@ -394,7 +394,7 @@ a p {
     font-family:'Helvetica', 'Arial';
     font-size: 1.25em;
     line-height: 1.25em;
-    color: white;
+    color: black;
 }
 
 h1 {
@@ -549,6 +549,7 @@ figcaption {
 .date {
     font-size: 1em;
     text-align: right;
+    color: white;
 }
 
 /*Modal*/
