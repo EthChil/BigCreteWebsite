@@ -1,0 +1,71 @@
+
+html
+{
+    background: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.blog {
+    position: absolute;
+    left: 19vw;
+    top: 24vw;
+    width: 12vw;
+    height: 6vw;
+    /*for debug*/
+    /*border: 3px solid red;*/
+}
+
+.crete {
+    position: absolute;
+    left: 46vw;
+    top: 48vw;
+    width: 23vw;
+    height: 5vw;
+    /*for debug*/
+    /*border: 3px solid red;*/
+}
+
+.projects {
+    position: absolute;
+    left: 56vw;
+    top: 19.5vw;
+    width: 21vw;
+    height: 4.5vw;
+    /*for debug*/
+    /*border: 3px solid red;*/
+}
+
+.projects {
+    position: absolute;
+    left: 56vw;
+    top: 19.5vw;
+    width: 21vw;
+    height: 4.5vw;
+    /*for debug*/
+    /*border: 3px solid red;*/
+}
+
+.about {
+    position: absolute;
+    left: 75vw;
+    top: 58vw;
+    width: 19vw;
+    height: 4.5vw;
+    /*for debug*/
+    /*border: 3px solid red;*/
+}
+
+.construction {
+    position: absolute;
+    left: 15vw;
+    top: 77vw;
+    width: 43vw;
+    height: 4.5vw;
+    /*for debug*/
+    /*border: 3px solid red;*/
+}

@@ -1,0 +1,122 @@
+{
+  "main": {
+    "id": "89a67462639adf2f",
+    "type": "split",
+    "children": [
+      {
+        "id": "28e0104db5eb5b5f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Electrical Design V1/FPGA/FPGA Board.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f9e22d1b8c51a1ae",
+    "type": "split",
+    "children": [
+      {
+        "id": "2acaef185ace7aad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f089b815cf9f1b5d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a898353be06adde6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 251
+  },
+  "right": {
+    "id": "2fed89ef0af1c0fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "41c8139232fdcaf3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65abbff9c2ad511b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Electrical Design V1/FPGA/FPGA Board.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "8f50fe4c8388fad1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "48d550c7af973520",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "28e0104db5eb5b5f",
+  "lastOpenFiles": [
+    "Design Journal.md",
+    "Electrical Design V1/FPGA/FPGA Board.md",
+    "Electrical Design V1/Boot SPI to FPGA connection.md",
+    "Electrical Design V1/Power Subcircuit.md",
+    "Mechanical Design V3/Mechanical Stackup FPGA UP.png",
+    "Mechanical Design V3/Mechanical Stackup.png",
+    "Architecture V2/TOP Design.md",
+    "Electrical Design V1/LED + Driver.md",
+    "Electrical Design V1/Motherboard.md",
+    "Electrical Design V1/Top Level Electrical.md"
+  ]
+}
