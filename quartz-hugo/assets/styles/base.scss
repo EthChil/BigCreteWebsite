@@ -1,8 +1,8 @@
 // Replace this with your own font imports!
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap');
 :root {
-  --font-body: "Source Sans Pro";
-  --font-header: "Inter";
+  --font-body: 'Cabin', sans-serif;
+  --font-header: 'Cabin', sans-serif;
   --font-mono: "Fira Code"
 }
 
@@ -36,12 +36,12 @@ body {
   width: 100vw;
   max-width: 100%;
   box-sizing: border-box;
-  background-color: var(--light);
+  background-color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6, thead {
   font-family: var(--font-header);
-  color: var(--dark);
+  color: #FFFFFF;
   font-weight: revert;
   margin: 2rem 0 0;
   padding: 2rem auto 1rem;
@@ -59,7 +59,8 @@ h1, h2, h3, h4, h5, h6, thead {
 }
 
 p, ul, text, a, tr, td, li, ol, ul {
-  font-family: var(--font-body);
+  //font-family: var(--font-body);
+  font-family: 'Cabin', sans-serif;
   color: var(--gray);
   fill: var(--gray);
   font-weight: revert;

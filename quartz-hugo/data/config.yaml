@@ -1,4 +1,4 @@
-name: Jacky Zhao
+name: Ethan Childerhose
 enableToc: true
 openToc: false
 enableLinkPreview: true
@@ -10,20 +10,20 @@ enableSPA: true
 enableFooter: true
 enableContextualBacklinks: true
 enableRecentNotes: false
-enableGitHubEdit: true
+enableGitHubEdit: false
 enableMermaid: true
-GitHubLink: https://github.com/jackyzha0/quartz/tree/hugo/content
+GitHubLink: https://github.com/EthChil/BigCreteWebsite
 search:
   enableSemanticSearch: false
   operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
   operandIndexId: "REPLACE-WITH-YOUR-OPERAND-INDEX-ID"
 description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
+  The construction site is the active place to watch big projects at Big Crete Engineering. The raw engineering process 
+  is shown bare here.
 page_title:
-  "🪴 Quartz 3.3"
+  "🏗️Construction Site"
 links:
   - link_name: Twitter
-    link: https://twitter.com/_jzhao
-  - link_name: GitHub
-    link: https://github.com/jackyzha0
+    link: https://twitter.com/BigCrete
+  - link_name: Linkedin
+    link: https://www.linkedin.com/in/ethan-childerhose/
