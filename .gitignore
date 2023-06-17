@@ -1,4 +1,8 @@
-*.blend
-*.blend1
 .DS_Store
-.DS_Store
+public
+resources
+.idea
+content/.obsidian
+assets/indices/linkIndex.json
+assets/indices/contentIndex.json
+linkmap
