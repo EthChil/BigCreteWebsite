@@ -1,3 +1,7 @@
+---
+title: "Journal"
+draft: "true"
+---
 
 Stream of conciousness for project allows me to keep track of what I've done and is a digital scratchpad
 

@@ -1,3 +1,7 @@
+---
+title: "LTSpice Notes"
+draft: "true"
+---
 
 Creating a custom diode model
 

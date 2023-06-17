@@ -13,7 +13,6 @@ enableRecentNotes: false
 enableGitHubEdit: false
 enableMermaid: true
 GitHubLink: https://github.com/EthChil/BigCreteWebsite
-construction_link: https://bigcrete.engineering/ConstructionSite
 search:
   enableSemanticSearch: false
   operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
@@ -23,6 +22,8 @@ description:
   is shown bare here.
 page_title:
   "🏗️Construction Site"
+page_title_blog:
+  "Big Crete Blog"
 links:
   - link_name: Twitter
     link: https://twitter.com/BigCrete
