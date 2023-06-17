@@ -13,6 +13,7 @@ enableRecentNotes: false
 enableGitHubEdit: false
 enableMermaid: true
 GitHubLink: https://github.com/EthChil/BigCreteWebsite
+construction_link: https://bigcrete.engineering/ConstructionSite
 search:
   enableSemanticSearch: false
   operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
