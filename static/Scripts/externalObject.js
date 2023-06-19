@@ -1,6 +1,6 @@
 //TODO: when you click on a board it should flip
 
-    import * as THREE from 'static/Scripts/three';
+    import * as THREE from 'three';
     import * as GLTF from 'gltf';
     import * as ROOM from 'room';
 
@@ -22,13 +22,19 @@ let board3;
 
 let boards;
 
+let brickMaterial, brick;
+
 const objectDistance = 10;
+
+const raycaster = new THREE.Raycaster();
 
 init();
 render();
 
 
 function init() {
+    var clicked = false;
+
     canvas = document.querySelector('canvas.webgl')
 
     scene = new THREE.Scene();
@@ -58,12 +64,24 @@ function init() {
     ambientLight.position.set( 2, 2, 2 );
     scene.add( ambientLight );
 
-    const loader = new GLTF.GLTFLoader();
-
     envGen = new THREE.PMREMGenerator(renderer);
     envGen.compileEquirectangularShader();
     scene.environment = envGen.fromScene(new ROOM.RoomEnvironment()).texture;
 
+
+    var brick_geometry = new THREE.BoxGeometry(2, 2, 4);
+    brickMaterial = new THREE.MeshStandardMaterial(brick);
+    brick = new THREE.Mesh(brick_geometry, brickMaterial);
+
+    brick.position.set(-0.25, 0, -2);
+
+    brick.name = "tony";
+    scene.add(brick);
+
+    // const loader = new GLTF.GLTFLoader();
+
+
+    /*
     // Load a glTF resource
     loader.load(
         // resource URL
@@ -144,7 +162,15 @@ function init() {
     );
 
     boards = [board1, board2, board3];
+    */
 
+    /**
+     * object ray cast selection
+     */
+    window.addEventListener( 'click', () =>
+    {
+        clicked = true;
+    })
 
     /**
      * Sizes
@@ -190,6 +216,8 @@ function init() {
 
     window.addEventListener('mousemove', (event) =>
     {
+        // cursor.x = event.clientX / sizes.width - 0.5
+        // cursor.y = event.clientY / sizes.height - 0.5
         cursor.x = event.clientX / sizes.width - 0.5
         cursor.y = event.clientY / sizes.height - 0.5
     })
@@ -206,15 +234,38 @@ function init() {
         const deltaTime = elapsedTime - previousTime
         previousTime = elapsedTime
 
+        raycaster.setFromCamera( cursor, camera );
+
+        const intersects = raycaster.intersectObjects(scene.children);
+
+        if(intersects.length > 0) {
+            document.body.style.cursor = "pointer";
+            if(clicked) {
+                if (intersects[0].object.name === "tony") {
+                    window.location.href = "circuit.html";
+                }
+                clicked = false;
+            }
+        } else {
+            document.body.style.cursor = "default";
+        }
+
+        for( let i = 0; i < intersects.length; i++ ) {
+            console.log(intersects[i].object.name)
+        }
+
         // // Animate meshes
         // for(const mesh of boards)
         // {
         //     mesh.rotation.x += deltaTime * 0.1
         //     mesh.rotation.y += deltaTime * 0.12
         // }
+        brick.rotation.x += deltaTime * 0.1;
+        brick.rotation.y += deltaTime * 0.12;
+
 
         // Animate camera
-        camera.position.y = - scrollY / sizes.height * (objectDistance)
+        camera.position.y = - scrollY / sizes.height * (objectDistance);
 
         //boards[currentSection].rotation.x += (scrollY * 0.1);
 
@@ -223,7 +274,7 @@ function init() {
 
         cameraGroup.position.x += (parallaxX - cameraGroup.position.x) * 10 * deltaTime;
         cameraGroup.position.y += (parallaxY - cameraGroup.position.y) * 10 * deltaTime;
-        console.log(camera.position.y)
+        // console.log(camera.position.y)
 
         // Render
         render();
