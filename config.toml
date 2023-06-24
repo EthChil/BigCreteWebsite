@@ -1,4 +1,4 @@
-baseURL = "https://bigcrete.engineering"
+baseURL = "https://bigcrete.engineering/"
 languageCode = "en-us"
 relativeURLs = false
 disablePathToLower = true
