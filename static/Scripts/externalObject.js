@@ -22,7 +22,7 @@ let board3;
 
 let boards;
 
-let brickMaterial, brick;
+let brickMaterial, brick1, brick2, brick3;
 
 const objectDistance = 10;
 
@@ -69,14 +69,31 @@ function init() {
     scene.environment = envGen.fromScene(new ROOM.RoomEnvironment()).texture;
 
 
-    var brick_geometry = new THREE.BoxGeometry(2, 2, 4);
-    brickMaterial = new THREE.MeshStandardMaterial(brick);
-    brick = new THREE.Mesh(brick_geometry, brickMaterial);
+    var brick_geometry = new THREE.BoxGeometry(4, 4, 8);
+    brickMaterial = new THREE.MeshStandardMaterial();
+    brick1 = new THREE.Mesh(brick_geometry, brickMaterial);
+    brick2 = new THREE.Mesh(brick_geometry, brickMaterial);
+    brick3 = new THREE.Mesh(brick_geometry, brickMaterial);
 
-    brick.position.set(-0.25, 0, -2);
 
-    brick.name = "tony";
-    scene.add(brick);
+    brick1.position.set(0, 0, -2);
+    brick1.rotation.x = 0;
+    brick1.rotation.y = Math.PI/2;
+
+    brick2.position.set(2, -4, -4);
+    brick2.rotation.x = 0;
+    brick2.rotation.y = Math.PI;
+
+    brick3.position.set(0, -8, -6);
+    brick3.rotation.x = 0;
+    brick3.rotation.y = 1.5*Math.PI;
+
+    brick1.name = "tony";
+    brick2.name = "tony2";
+    brick3.name = "tony3";
+    scene.add(brick1);
+    scene.add(brick2);
+    scene.add(brick3);
 
     // const loader = new GLTF.GLTFLoader();
 
@@ -211,15 +228,23 @@ function init() {
      * Cursor
      */
     const cursor = {}
+    const cursor_scale = {}
     cursor.x = 0
     cursor.y = 0
+    cursor_scale.x = 0
+    cursor_scale.y = 0
+
 
     window.addEventListener('mousemove', (event) =>
     {
         // cursor.x = event.clientX / sizes.width - 0.5
         // cursor.y = event.clientY / sizes.height - 0.5
-        cursor.x = event.clientX / sizes.width - 0.5
-        cursor.y = event.clientY / sizes.height - 0.5
+        cursor.x = (event.clientX / sizes.width - 0.5);
+        cursor.y = (-event.clientY / sizes.height + 0.5);
+
+        // cursor.x = (event.clientX / sizes.width);
+        // cursor.y = (event.clientY / sizes.height);
+
     })
 
     /**
@@ -234,7 +259,22 @@ function init() {
         const deltaTime = elapsedTime - previousTime
         previousTime = elapsedTime
 
-        raycaster.setFromCamera( cursor, camera );
+        cursor_scale.x = cursor.x*2;
+        cursor_scale.y = cursor.y*2;
+        raycaster.setFromCamera( cursor_scale, camera );
+
+        // // Create a geometry that will be used for the line
+        // let geometry = new THREE.BufferGeometry().setFromPoints([
+        //     raycaster.ray.origin,
+        //     raycaster.ray.origin.clone().add(raycaster.ray.direction.multiplyScalar(100))
+        // ]);
+        //
+        // // Create a material for the line
+        // let material = new THREE.LineBasicMaterial({color: 0xff0000}); // red color
+        //
+        // // Create a line using the geometry and material, then add it to the scene
+        // let line = new THREE.Line(geometry, material);
+        // scene.add(line);
 
         const intersects = raycaster.intersectObjects(scene.children);
 
@@ -250,30 +290,28 @@ function init() {
             document.body.style.cursor = "default";
         }
 
-        for( let i = 0; i < intersects.length; i++ ) {
-            console.log(intersects[i].object.name)
-        }
-
         // // Animate meshes
         // for(const mesh of boards)
         // {
         //     mesh.rotation.x += deltaTime * 0.1
         //     mesh.rotation.y += deltaTime * 0.12
         // }
-        brick.rotation.x += deltaTime * 0.1;
-        brick.rotation.y += deltaTime * 0.12;
-
-
-        // Animate camera
-        camera.position.y = - scrollY / sizes.height * (objectDistance);
-
-        //boards[currentSection].rotation.x += (scrollY * 0.1);
 
         const parallaxX = cursor.x * 0.5;
         const parallaxY = - cursor.y * 0.5;
 
-        cameraGroup.position.x += (parallaxX - cameraGroup.position.x) * 10 * deltaTime;
-        cameraGroup.position.y += (parallaxY - cameraGroup.position.y) * 10 * deltaTime;
+        // Animate camera
+        camera.position.y = - scrollY / sizes.height * (objectDistance) + parallaxY;
+        // camera.position.y += (parallaxY - camera.position.y) * 10 * deltaTime;
+        camera.position.x = parallaxX;
+        // camera.rotation.y =
+
+        //boards[currentSection].rotation.x += (scrollY * 0.1);
+
+
+        //
+        // cameraGroup.position.x += (parallaxX - cameraGroup.position.x) * 10 * deltaTime;
+        // cameraGroup.position.y += (parallaxY - cameraGroup.position.y) * 10 * deltaTime;
         // console.log(camera.position.y)
 
         // Render

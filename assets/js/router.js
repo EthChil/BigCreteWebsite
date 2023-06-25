@@ -8,7 +8,11 @@ import {
 // List of routes that do not include the SPA router
 const nonSPARoutes = [
   '/construction.html',
+  '/blog.html',
   '/',
+  '/circuit.html',
+  '/about.html',
+  '/main.html',
 ];
 
 export const attachSPARouting = (init, rerender) => {
