@@ -22,9 +22,12 @@ let board3;
 
 let boards;
 
-let brickMaterial, brick1, brick2, brick3;
+let brickMaterial;
+let brick_list = [];
 
-const objectDistance = 10;
+const objectDistance = 9.85;
+const cameraDepth = 14; // 9
+const numProjects = 3;
 
 const raycaster = new THREE.Raycaster();
 
@@ -39,8 +42,6 @@ function init() {
 
     scene = new THREE.Scene();
 
-
-
     /**
      * Camera
      */
@@ -50,7 +51,7 @@ function init() {
 
     // Base camera
     camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.25, 50);
-    camera.position.set( 0, 4, 9 );//x is left right, y is up down, z is in out
+    camera.position.set( 0, 4, cameraDepth );//x is left right, y is up down, z is in out
     cameraGroup.add(camera);
 
     renderer = new THREE.WebGLRenderer( { antialias: true, alpha:true, canvas: canvas } );
@@ -71,29 +72,18 @@ function init() {
 
     var brick_geometry = new THREE.BoxGeometry(4, 4, 8);
     brickMaterial = new THREE.MeshStandardMaterial();
-    brick1 = new THREE.Mesh(brick_geometry, brickMaterial);
-    brick2 = new THREE.Mesh(brick_geometry, brickMaterial);
-    brick3 = new THREE.Mesh(brick_geometry, brickMaterial);
 
+    for( let i = 0; i < numProjects+2; i++ ) {
+        let brick_temp = new THREE.Mesh(brick_geometry, brickMaterial);
 
-    brick1.position.set(0, 0, -2);
-    brick1.rotation.x = 0;
-    brick1.rotation.y = Math.PI/2;
+        brick_temp.position.set(2*Math.sin(0.5 * i * Math.PI), -4*i, 2*Math.cos(0.5 * i * Math.PI));
+        brick_temp.rotation.x = 0;
+        brick_temp.rotation.y = (i+1)/2 * Math.PI;
+        brick_temp.name = "brickNum" + i;
 
-    brick2.position.set(2, -4, -4);
-    brick2.rotation.x = 0;
-    brick2.rotation.y = Math.PI;
-
-    brick3.position.set(0, -8, -6);
-    brick3.rotation.x = 0;
-    brick3.rotation.y = 1.5*Math.PI;
-
-    brick1.name = "tony";
-    brick2.name = "tony2";
-    brick3.name = "tony3";
-    scene.add(brick1);
-    scene.add(brick2);
-    scene.add(brick3);
+        brick_list.push(brick_temp);
+        scene.add(brick_temp);
+    }
 
     // const loader = new GLTF.GLTFLoader();
 
@@ -300,11 +290,14 @@ function init() {
         const parallaxX = cursor.x * 0.5;
         const parallaxY = - cursor.y * 0.5;
 
+        const full_rotation_height = 0.5*objectDistance / sizes.height;
+
         // Animate camera
-        camera.position.y = - scrollY / sizes.height * (objectDistance) + parallaxY;
+        camera.position.y = -0.78* scrollY * full_rotation_height + parallaxY;
+        camera.position.z = cameraDepth*Math.cos(scrollY * full_rotation_height / Math.PI);
         // camera.position.y += (parallaxY - camera.position.y) * 10 * deltaTime;
-        camera.position.x = parallaxX;
-        // camera.rotation.y =
+        camera.position.x = parallaxX + cameraDepth*Math.sin(scrollY * full_rotation_height / Math.PI);
+        camera.rotation.y = (scrollY * full_rotation_height) / Math.PI;
 
         //boards[currentSection].rotation.x += (scrollY * 0.1);
 
