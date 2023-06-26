@@ -59,11 +59,11 @@ function init() {
     renderer.physicallyCorrectLights = true
     renderer.setPixelRatio( (window.innerWidth) / window.innerHeight );
     renderer.setSize( window.innerWidth, window.innerHeight );
-    renderer.outputEncoding = THREE.sRGBEncoding;
-    renderer.toneMapping = THREE.ReinhardToneMapping;
+    // renderer.outputEncoding = THREE.sRGBEncoding;
+    // renderer.toneMapping = THREE.ReinhardToneMapping;
 
-    point_light_l = new THREE.PointLight( 0xFFFFFF, 200, 30, 4);
-    point_light_r = new THREE.PointLight( 0xFFFFFF, 200, 30, 4);
+    point_light_l = new THREE.PointLight( 0xFFFFFF, 300, 30, 3);
+    point_light_r = new THREE.PointLight( 0xFFFFFF, 300, 30, 3);
     scene.add( point_light_l );
     scene.add( point_light_r );
 
@@ -82,7 +82,7 @@ function init() {
     let brick_texture_roughness = new THREE.TextureLoader().load('Assets/Textures/TexturesCom_Wall_ConcreteBunker3_4x4_B_2K_roughness.png');
     let brick_texture_alpha = new THREE.TextureLoader().load('Assets/Textures/TexturesCom_Wall_ConcreteBunker3_4x4_B_2K_alpha.png');
 
-    let window_normal = new THREE.TextureLoader().load('Assets/Textures/NormalMapWindow.png');
+    let window_texture = new THREE.TextureLoader().load('Assets/Textures/PONG_FPGA_albedo.png');
 
     // brick_texture_colour.repeat.set(0.5, 0.25);
     // brick_texture_ao.repeat.set(0.5, 0.25);
@@ -92,15 +92,16 @@ function init() {
     // brick_texture_alpha.repeat.set(1, 1);
 
     let brick_geometry = new THREE.BoxGeometry(4, 4, 8);
-    // let window_geometry = new THREE.BoxGeometry(3, 3, 1);
-    //
-    // let windowMaterial = new THREE.MeshStandardMaterial({
-    //     normalMap: window_normal,
-    // });
-    //
-    // let project_window = new THREE.Mesh(window_geometry, windowMaterial);
-    // project_window.position.set(-2, 0, 3.45);
-    // scene.add(project_window);
+    let window_geometry = new THREE.BoxGeometry(3, 3, 1);
+
+    let windowMaterial = new THREE.MeshBasicMaterial({
+        map: window_texture,
+        // color: 0x000000,
+    });
+
+    let project_window = new THREE.Mesh(window_geometry, windowMaterial);
+    project_window.position.set(-2, 0, 3);
+    scene.add(project_window);
 
     brickMaterial = new THREE.MeshStandardMaterial({
         map: brick_texture_colour,
@@ -345,8 +346,8 @@ function init() {
         //     mesh.rotation.y += deltaTime * 0.12
         // }
 
-        const parallaxX = cursor.x * 0.5;
-        const parallaxY = - cursor.y * 0.5;
+        const parallaxX = cursor.x;
+        const parallaxY = - cursor.y;
 
         const full_rotation_height = 0.5*objectDistance / sizes.height;
 
@@ -359,15 +360,15 @@ function init() {
 
         // light pos
         point_light_l.position.y = (-0.78 * scrollY * full_rotation_height);
-        point_light_l.position.z = 0.5*cameraDepth*Math.cos((scrollY - 250) * full_rotation_height / Math.PI);
-        point_light_l.position.x = 0.5*cameraDepth*Math.sin((scrollY - 250) * full_rotation_height / Math.PI);
+        point_light_l.position.z = 0.6*cameraDepth*Math.cos((scrollY - 250) * full_rotation_height / Math.PI);
+        point_light_l.position.x = 0.6*cameraDepth*Math.sin((scrollY - 250) * full_rotation_height / Math.PI);
 
         // console.log(scrollY);
 
         // light pos
         point_light_r.position.y = (-0.78 * scrollY * full_rotation_height);
-        point_light_r.position.z = 0.5*cameraDepth*Math.cos((scrollY + 250) * full_rotation_height / Math.PI);
-        point_light_r.position.x = 0.5*cameraDepth*Math.sin((scrollY + 250) * full_rotation_height / Math.PI);
+        point_light_r.position.z = 0.6*cameraDepth*Math.cos((scrollY + 250) * full_rotation_height / Math.PI);
+        point_light_r.position.x = 0.6*cameraDepth*Math.sin((scrollY + 250) * full_rotation_height / Math.PI);
 
 
         //boards[currentSection].rotation.x += (scrollY * 0.1);
