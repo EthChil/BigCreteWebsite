@@ -15,6 +15,7 @@ const sizes = {
 
 let camera, cameraGroup, scene, renderer, controls, canvas, envGen;
 let gui;
+let point_light_l, point_light_r;
 
 let board1;
 let board2;
@@ -61,22 +62,61 @@ function init() {
     renderer.outputEncoding = THREE.sRGBEncoding;
     renderer.toneMapping = THREE.ReinhardToneMapping;
 
-    var ambientLight = new THREE.AmbientLight( 0x404040, 10);
-    ambientLight.position.set( 2, 2, 2 );
-    scene.add( ambientLight );
+    point_light_l = new THREE.PointLight( 0xFFFFFF, 200, 30, 4);
+    point_light_r = new THREE.PointLight( 0xFFFFFF, 200, 30, 4);
+    scene.add( point_light_l );
+    scene.add( point_light_r );
+
+    // var ambientLight = new THREE.AmbientLight( 0x404040, 10);
+    // ambientLight.position.set( 2, 2, 2 );
+    // scene.add( ambientLight );
 
     envGen = new THREE.PMREMGenerator(renderer);
     envGen.compileEquirectangularShader();
-    scene.environment = envGen.fromScene(new ROOM.RoomEnvironment()).texture;
+    // scene.environment = envGen.fromScene(new ROOM.RoomEnvironment()).texture;
 
+    let brick_texture_colour = new THREE.TextureLoader().load('Assets/Textures/TexturesCom_Wall_ConcreteBunker3_4x4_B_2K_albedo.png');
+    let brick_texture_ao = new THREE.TextureLoader().load('Assets/Textures/TexturesCom_Wall_ConcreteBunker3_4x4_B_2K_ao.png');
+    // let brick_texture_height = new THREE.TextureLoader().load('Assets/Textures/TexturesCom_Wall_ConcreteBunker3_4x4_B_2K_height.png');
+    let brick_texture_normal = new THREE.TextureLoader().load('Assets/Textures/TexturesCom_Wall_ConcreteBunker3_4x4_B_2K_normal.png');
+    let brick_texture_roughness = new THREE.TextureLoader().load('Assets/Textures/TexturesCom_Wall_ConcreteBunker3_4x4_B_2K_roughness.png');
+    let brick_texture_alpha = new THREE.TextureLoader().load('Assets/Textures/TexturesCom_Wall_ConcreteBunker3_4x4_B_2K_alpha.png');
 
-    var brick_geometry = new THREE.BoxGeometry(4, 4, 8);
-    brickMaterial = new THREE.MeshStandardMaterial();
+    let window_normal = new THREE.TextureLoader().load('Assets/Textures/NormalMapWindow.png');
+
+    // brick_texture_colour.repeat.set(0.5, 0.25);
+    // brick_texture_ao.repeat.set(0.5, 0.25);
+    // brick_texture_height.repeat.set(0.25, 0.5);
+    // brick_texture_normal.repeat.set(0.5, 0.25);
+    // brick_texture_roughness.repeat.set(0.5, 0.25);
+    // brick_texture_alpha.repeat.set(1, 1);
+
+    let brick_geometry = new THREE.BoxGeometry(4, 4, 8);
+    // let window_geometry = new THREE.BoxGeometry(3, 3, 1);
+    //
+    // let windowMaterial = new THREE.MeshStandardMaterial({
+    //     normalMap: window_normal,
+    // });
+    //
+    // let project_window = new THREE.Mesh(window_geometry, windowMaterial);
+    // project_window.position.set(-2, 0, 3.45);
+    // scene.add(project_window);
+
+    brickMaterial = new THREE.MeshStandardMaterial({
+        map: brick_texture_colour,
+        aoMap: brick_texture_ao,
+        aoMapIntensity: 100,
+        normalMap: brick_texture_normal,
+        roughnessMap: brick_texture_roughness,
+        color: 0x6c6f70,
+        alphaMap: brick_texture_alpha,
+        alphaTest: 0.5,
+    });
 
     for( let i = 0; i < numProjects+2; i++ ) {
         let brick_temp = new THREE.Mesh(brick_geometry, brickMaterial);
 
-        brick_temp.position.set(2*Math.sin(0.5 * i * Math.PI), -4*i, 2*Math.cos(0.5 * i * Math.PI));
+        brick_temp.position.set(1.9*Math.sin(0.5 * i * Math.PI), -4*i, 1.9*Math.cos(0.5 * i * Math.PI));
         brick_temp.rotation.x = 0;
         brick_temp.rotation.y = (i+1)/2 * Math.PI;
         brick_temp.name = "brickNum" + i;
@@ -298,6 +338,19 @@ function init() {
         // camera.position.y += (parallaxY - camera.position.y) * 10 * deltaTime;
         camera.position.x = parallaxX + cameraDepth*Math.sin(scrollY * full_rotation_height / Math.PI);
         camera.rotation.y = (scrollY * full_rotation_height) / Math.PI;
+
+        // light pos
+        point_light_l.position.y = (-0.78 * scrollY * full_rotation_height);
+        point_light_l.position.z = 0.5*cameraDepth*Math.cos((scrollY - 250) * full_rotation_height / Math.PI);
+        point_light_l.position.x = 0.5*cameraDepth*Math.sin((scrollY - 250) * full_rotation_height / Math.PI);
+
+        // console.log(scrollY);
+
+        // light pos
+        point_light_r.position.y = (-0.78 * scrollY * full_rotation_height);
+        point_light_r.position.z = 0.5*cameraDepth*Math.cos((scrollY + 250) * full_rotation_height / Math.PI);
+        point_light_r.position.x = 0.5*cameraDepth*Math.sin((scrollY + 250) * full_rotation_height / Math.PI);
+
 
         //boards[currentSection].rotation.x += (scrollY * 0.1);
 
