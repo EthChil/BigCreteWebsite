@@ -105,16 +105,34 @@ function init() {
     brickMaterial = new THREE.MeshStandardMaterial({
         map: brick_texture_colour,
         aoMap: brick_texture_ao,
-        aoMapIntensity: 100,
+        aoMapIntensity: 1,
+        normalMap: brick_texture_normal,
+        roughnessMap: brick_texture_roughness,
+        color: 0x6c6f70,
+    });
+
+    let brickWindow = new THREE.MeshStandardMaterial({
+        map: brick_texture_colour,
+        aoMap: brick_texture_ao,
+        aoMapIntensity: 1,
         normalMap: brick_texture_normal,
         roughnessMap: brick_texture_roughness,
         color: 0x6c6f70,
         alphaMap: brick_texture_alpha,
-        alphaTest: 0.5,
+        transparent: true,
     });
+    
+    var brickMaterialStack = [
+        brickMaterial,
+        brickWindow,
+        brickMaterial,
+        brickMaterial,
+        brickMaterial,
+        brickMaterial,
+    ];
 
     for( let i = 0; i < numProjects+2; i++ ) {
-        let brick_temp = new THREE.Mesh(brick_geometry, brickMaterial);
+        let brick_temp = new THREE.Mesh(brick_geometry, brickMaterialStack);
 
         brick_temp.position.set(1.9*Math.sin(0.5 * i * Math.PI), -4*i, 1.9*Math.cos(0.5 * i * Math.PI));
         brick_temp.rotation.x = 0;
