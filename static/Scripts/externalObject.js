@@ -25,10 +25,11 @@ let boards;
 
 let brickMaterial;
 let brick_list = [];
+let window_list = [];
 
 const objectDistance = 9.85;
 const cameraDepth = 14; // 9
-const numProjects = 3;
+const numProjects = 12;
 
 const raycaster = new THREE.Raycaster();
 
@@ -82,26 +83,60 @@ function init() {
     let brick_texture_roughness = new THREE.TextureLoader().load('Assets/Textures/TexturesCom_Wall_ConcreteBunker3_4x4_B_2K_roughness.png');
     let brick_texture_alpha = new THREE.TextureLoader().load('Assets/Textures/TexturesCom_Wall_ConcreteBunker3_4x4_B_2K_alpha.png');
 
-    let window_texture = new THREE.TextureLoader().load('Assets/Textures/PONG_FPGA_albedo.png');
+    // project 1
+    let BIG_CRETE_CALCULATOR = new THREE.TextureLoader().load('Assets/Textures/calculator_window.png');
 
-    // brick_texture_colour.repeat.set(0.5, 0.25);
-    // brick_texture_ao.repeat.set(0.5, 0.25);
-    // brick_texture_height.repeat.set(0.25, 0.5);
-    // brick_texture_normal.repeat.set(0.5, 0.25);
-    // brick_texture_roughness.repeat.set(0.5, 0.25);
-    // brick_texture_alpha.repeat.set(1, 1);
+    // project 2
+    let THROW_BOT = new THREE.TextureLoader().load('Assets/Textures/Throwbot_Window.png');
+
+    // project 3 (FPGA POWER SUPPLY)
+    let FPGA_PSU = new THREE.TextureLoader().load('Assets/Textures/fpga_psu_window.png');
+
+    // project 4 (bracket bot)
+    let BRACKET_BOT = new THREE.TextureLoader().load('Assets/Textures/bracketbot_window.png');
+
+    // project 5 (fpga pong)
+    let PONG_FPGA = new THREE.TextureLoader().load('Assets/Textures/PONG_FPGA_albedo.png');
+
+    // project 6 (lixie clock)
+    let LIXIE_CLOCK = new THREE.TextureLoader().load('Assets/Textures/clock_window.png');
+
+    // project 7 (folding cube)
+    let CUBE = new THREE.TextureLoader().load('Assets/Textures/cube_window.png');
+
+    // Project 7.5 (ventillator)
+    let VENTILATOR = new THREE.TextureLoader().load('Assets/Textures/ventilator_window.png');
+
+    // project 8 (fold3r)
+    let FOLD3R = new THREE.TextureLoader().load('Assets/Textures/fold3r_window.png');
+
+    // project 9 (autonoprint)
+    let AUTONOPRINT = new THREE.TextureLoader().load('Assets/Textures/autonoprint_window.png');
+
+    // project 10 (a salter)
+
+    // project 11 (Rebolt)
+
+    // project 12 (FRC Drivetrain)
 
     let brick_geometry = new THREE.BoxGeometry(4, 4, 8);
-    let window_geometry = new THREE.BoxGeometry(3, 3, 1);
+    let window_geometry = new THREE.BoxGeometry(3, 3, 3);
 
-    let windowMaterial = new THREE.MeshBasicMaterial({
-        map: window_texture,
-        // color: 0x000000,
-    });
-
-    let project_window = new THREE.Mesh(window_geometry, windowMaterial);
-    project_window.position.set(-2, 0, 3);
-    scene.add(project_window);
+    let project_window_materials = [
+        new THREE.MeshBasicMaterial({ map: BIG_CRETE_CALCULATOR }), //1
+        new THREE.MeshBasicMaterial({ map: THROW_BOT }),  //2
+        new THREE.MeshBasicMaterial({ map: FPGA_PSU }), //3
+        new THREE.MeshBasicMaterial({ map: BRACKET_BOT }), //4
+        new THREE.MeshBasicMaterial({ map: PONG_FPGA }), //5
+        new THREE.MeshBasicMaterial({ map: LIXIE_CLOCK }), //6
+        new THREE.MeshBasicMaterial({ map: CUBE }), //7
+        new THREE.MeshBasicMaterial({ map: VENTILATOR }), //7.5
+        new THREE.MeshBasicMaterial({ map: FOLD3R }), //8
+        new THREE.MeshBasicMaterial({ map: AUTONOPRINT }), //9
+        new THREE.MeshBasicMaterial({ map: PONG_FPGA }), //10
+        new THREE.MeshBasicMaterial({ map: PONG_FPGA }), //11
+        new THREE.MeshBasicMaterial({ map: PONG_FPGA }), //12
+    ];
 
     brickMaterial = new THREE.MeshStandardMaterial({
         map: brick_texture_colour,
@@ -123,6 +158,7 @@ function init() {
         transparent: true,
     });
     
+    // material stackup
     var brickMaterialStack = [
         brickMaterial,
         brickWindow,
@@ -132,7 +168,22 @@ function init() {
         brickMaterial,
     ];
 
-    for( let i = 0; i < numProjects+2; i++ ) {
+    var divBy4 = 0;
+
+    for( let i = 0; i < numProjects; i++ ) {
+        let project_window = new THREE.Mesh(window_geometry, project_window_materials[i]);
+        // project_window.position.set(-2, 0, 3);
+        if(i%4 == 0)
+            project_window.position.set(-2, -4*i, 2);
+        if(i%4 == 1)
+            project_window.position.set(2, -4*i, 2);
+        if(i%4 == 2)
+            project_window.position.set(2, -4*i, -2);
+        if(i%4 == 3)
+            project_window.position.set(-2, -4*i, -2);
+        // window_list.push(project_window);
+        scene.add(project_window);
+
         let brick_temp = new THREE.Mesh(brick_geometry, brickMaterialStack);
 
         brick_temp.position.set(1.9*Math.sin(0.5 * i * Math.PI), -4*i, 1.9*Math.cos(0.5 * i * Math.PI));
@@ -330,7 +381,7 @@ function init() {
         if(intersects.length > 0) {
             document.body.style.cursor = "pointer";
             if(clicked) {
-                if (intersects[0].object.name === "tony") {
+                if (intersects[0].object.name === "brickNum0") {
                     window.location.href = "circuit.html";
                 }
                 clicked = false;
@@ -349,10 +400,10 @@ function init() {
         const parallaxX = cursor.x;
         const parallaxY = - cursor.y;
 
-        const full_rotation_height = 0.5*objectDistance / sizes.height;
+        const full_rotation_height = 0.501*objectDistance / sizes.height;
 
         // Animate camera
-        camera.position.y = -0.78* scrollY * full_rotation_height + parallaxY;
+        camera.position.y = -0.805 * scrollY * full_rotation_height + parallaxY; //0.77
         camera.position.z = cameraDepth*Math.cos(scrollY * full_rotation_height / Math.PI);
         // camera.position.y += (parallaxY - camera.position.y) * 10 * deltaTime;
         camera.position.x = parallaxX + cameraDepth*Math.sin(scrollY * full_rotation_height / Math.PI);
