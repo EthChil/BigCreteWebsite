@@ -29,7 +29,7 @@ let window_list = [];
 
 const objectDistance = 9.85;
 const cameraDepth = 14; // 9
-const numProjects = 12;
+const numProjects = 15;
 
 const raycaster = new THREE.Raycaster();
 
@@ -84,43 +84,63 @@ function init() {
     let brick_texture_alpha = new THREE.TextureLoader().load('Assets/Textures/TexturesCom_Wall_ConcreteBunker3_4x4_B_2K_alpha.png');
 
     // project 1
+    // BIG CRETE CALCULATOR
+    // click for more
     let BIG_CRETE_CALCULATOR = new THREE.TextureLoader().load('Assets/Textures/calculator_window.png');
+    let SP_BIG_CRETE_CALCULATOR = new THREE.TextureLoader().load('Assets/Textures/text/calculator_text.png');
 
     // project 2
     let THROW_BOT = new THREE.TextureLoader().load('Assets/Textures/Throwbot_Window.png');
+    let SP_THROW_BOT = new THREE.TextureLoader().load('Assets/Textures/text/throwbot_text.png');
 
     // project 3 (FPGA POWER SUPPLY)
     let FPGA_PSU = new THREE.TextureLoader().load('Assets/Textures/fpga_psu_window.png');
+    let SP_FPGA_PSU = new THREE.TextureLoader().load('Assets/Textures/text/fpga_psu_text.png');
 
     // project 4 (bracket bot)
     let BRACKET_BOT = new THREE.TextureLoader().load('Assets/Textures/bracketbot_window.png');
+    let SP_BRACKET_BOT = new THREE.TextureLoader().load('Assets/Textures/text/bracketbot_text.png');
 
     // project 5 (fpga pong)
     let PONG_FPGA = new THREE.TextureLoader().load('Assets/Textures/PONG_FPGA_albedo.png');
+    let SP_PONG_FPGA = new THREE.TextureLoader().load('Assets/Textures/text/fpga_pong_text.png');
 
     // project 6 (lixie clock)
     let LIXIE_CLOCK = new THREE.TextureLoader().load('Assets/Textures/clock_window.png');
+    let SP_LIXIE_CLOCK = new THREE.TextureLoader().load('Assets/Textures/text/lixie_clock_text.png');
 
     // project 7 (folding cube)
     let CUBE = new THREE.TextureLoader().load('Assets/Textures/cube_window.png');
+    let SP_CUBE = new THREE.TextureLoader().load('Assets/Textures/text/cube_text.png');
 
-    // Project 7.5 (ventillator)
+    // Project 8 (ventillator)
     let VENTILATOR = new THREE.TextureLoader().load('Assets/Textures/ventilator_window.png');
+    let SP_VENTILATOR = new THREE.TextureLoader().load('Assets/Textures/text/ventilator_text.png');
 
-    // project 8 (fold3r)
+    // project 9 (mag-z follow focus)
+    let MAGZ = new THREE.TextureLoader().load('Assets/Textures/magz_window.png');
+    let SP_MAGZ = new THREE.TextureLoader().load('Assets/Textures/text/magz_text.png');
+
+    // project 10 (fold3r)
     let FOLD3R = new THREE.TextureLoader().load('Assets/Textures/fold3r_window.png');
+    let SP_FOLD3R = new THREE.TextureLoader().load('Assets/Textures/text/fold3r_text.png');
 
-    // project 9 (autonoprint)
+    // project 11 (autonoprint)
     let AUTONOPRINT = new THREE.TextureLoader().load('Assets/Textures/autonoprint_window.png');
+    let SP_AUTONOPRINT = new THREE.TextureLoader().load('Assets/Textures/text/autonoprint_text.png');
 
-    // project 10 (a salter)
+    // project 12 (Rebolt)
+    // let REBOLT = new THREE.TextureLoader().load('Assets/Textures/autonoprint_window.png');
+    let SP_REBOLT = new THREE.TextureLoader().load('Assets/Textures/text/rebolt_text.png');
 
-    // project 11 (Rebolt)
+    // project 13 (FRC Drivetrain)
+    // let FRC = new THREE.TextureLoader().load('Assets/Textures/autonoprint_window.png');
+    let SP_FRC = new THREE.TextureLoader().load('Assets/Textures/text/frc_dt_text.png');
 
-    // project 12 (FRC Drivetrain)
 
     let brick_geometry = new THREE.BoxGeometry(4, 4, 8);
     let window_geometry = new THREE.BoxGeometry(3, 3, 3);
+    let spray_paint_geometry = new THREE.PlaneGeometry(3,3);
 
     let project_window_materials = [
         new THREE.MeshBasicMaterial({ map: BIG_CRETE_CALCULATOR }), //1
@@ -130,12 +150,24 @@ function init() {
         new THREE.MeshBasicMaterial({ map: PONG_FPGA }), //5
         new THREE.MeshBasicMaterial({ map: LIXIE_CLOCK }), //6
         new THREE.MeshBasicMaterial({ map: CUBE }), //7
-        new THREE.MeshBasicMaterial({ map: VENTILATOR }), //7.5
-        new THREE.MeshBasicMaterial({ map: FOLD3R }), //8
-        new THREE.MeshBasicMaterial({ map: AUTONOPRINT }), //9
-        new THREE.MeshBasicMaterial({ map: PONG_FPGA }), //10
-        new THREE.MeshBasicMaterial({ map: PONG_FPGA }), //11
-        new THREE.MeshBasicMaterial({ map: PONG_FPGA }), //12
+        new THREE.MeshBasicMaterial({ map: VENTILATOR }), //8
+        new THREE.MeshBasicMaterial({ map: FOLD3R }), //9
+        new THREE.MeshBasicMaterial({ map: MAGZ }), //10
+        new THREE.MeshBasicMaterial({ map: AUTONOPRINT }), //11
+        new THREE.MeshBasicMaterial({ map: REBOLT }), //12
+        new THREE.MeshBasicMaterial({ map: FRC }), //13
+        // new THREE.MeshBasicMaterial({ map: PONG_FPGA }), //13
+        // new THREE.MeshBasicMaterial({ map: PONG_FPGA }), //13
+        // new THREE.MeshBasicMaterial({ map: PONG_FPGA }), //13
+    ];
+
+    let spray_paint_materials = [
+        new THREE.MeshStandardMaterial({ map: SP_BIG_CRETE_CALCULATOR, transparent: true  }),
+        new THREE.MeshStandardMaterial({ map: SP_THROW_BOT, transparent: true  }),
+        new THREE.MeshStandardMaterial({ map: SP_FPGA_PSU, transparent: true  }),
+        new THREE.MeshStandardMaterial({ map: SP_BRACKET_BOT, transparent: true  }),
+        new THREE.MeshStandardMaterial({ map: SP_PONG_FPGA, transparent: true  }),
+        new THREE.MeshStandardMaterial({ map: SP_LIXIE_CLOCK, transparent: true  }),
     ];
 
     brickMaterial = new THREE.MeshStandardMaterial({
@@ -183,6 +215,18 @@ function init() {
             project_window.position.set(-2, -4*i, -2);
         // window_list.push(project_window);
         scene.add(project_window);
+
+        let project_spray_paint = new THREE.Mesh(spray_paint_geometry, spray_paint_materials[i]);
+        project_spray_paint.rotation.y = (i)/2 * Math.PI;
+        if(i%4 == 0)
+            project_spray_paint.position.set(1.75, -4*i, 3.95);
+        if(i%4 == 1)
+            project_spray_paint.position.set(3.95, -4*i, -1.75);
+        if(i%4 == 2)
+            project_spray_paint.position.set(-1.75, -4*i, -3.95);
+        if(i%4 == 3)
+            project_spray_paint.position.set(-3.95, -4*i, 1.75);
+        scene.add(project_spray_paint);
 
         let brick_temp = new THREE.Mesh(brick_geometry, brickMaterialStack);
 
