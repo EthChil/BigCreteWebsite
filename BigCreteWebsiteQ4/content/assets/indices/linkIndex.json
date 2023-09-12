@@ -1,0 +1,1173 @@
+{
+  "index": {
+    "links": {
+      "/BigCreteCalculator/Design-Journal": [
+        {
+          "source": "/BigCreteCalculator/Design-Journal",
+          "target": "/Power-Subcircuit",
+          "text": "Power Subcircuit"
+        },
+        {
+          "source": "/BigCreteCalculator/Design-Journal",
+          "target": "/Current-Mirror-Power-Analysis",
+          "text": "Current Mirror Power Analysis"
+        },
+        {
+          "source": "/BigCreteCalculator/Design-Journal",
+          "target": "/LTSpice-Master-Notes",
+          "text": "LTSpice Master Notes"
+        },
+        {
+          "source": "/BigCreteCalculator/Design-Journal",
+          "target": "/To-Buy",
+          "text": "To Buy"
+        },
+        {
+          "source": "/BigCreteCalculator/Design-Journal",
+          "target": "/BOM-V2-Rev-1-Electronics",
+          "text": "BOM V2 Rev 1 Electronics"
+        }
+      ],
+      "/BigCreteCalculator/High-Level-Scope": [
+        {
+          "source": "/BigCreteCalculator/High-Level-Scope",
+          "target": "/V2/Architecture-V2/TOP-Design-V2",
+          "text": "V2/Architecture V2/TOP Design V2"
+        }
+      ],
+      "/BigCreteCalculator/V1/Electrical-Design-V1/LED-+-Driver": [
+        {
+          "source": "/BigCreteCalculator/V1/Electrical-Design-V1/LED-+-Driver",
+          "target": "/Motherboard",
+          "text": "Motherboard"
+        }
+      ],
+      "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2": [
+        {
+          "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+          "target": "/Power-Architecture-V2",
+          "text": "Power Architecture V2"
+        },
+        {
+          "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+          "target": "/Current-Mirror-Power-Analysis",
+          "text": "Current Mirror Power Analysis"
+        },
+        {
+          "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+          "target": "/Power-Architecture-V2",
+          "text": "Power Architecture V2"
+        },
+        {
+          "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+          "target": "/Power-Architecture-V2",
+          "text": "Power Architecture V2"
+        }
+      ],
+      "/BigCreteCalculator/V2/Electrical-Design-V2/Current-Mirror-Power-Analysis": [
+        {
+          "source": "/BigCreteCalculator/V2/Electrical-Design-V2/Current-Mirror-Power-Analysis",
+          "target": "/LTSpice-Master-Notes",
+          "text": "LTSpice Master Notes"
+        }
+      ],
+      "/BigCreteCalculator/V3/Architecture-V3/Architecutre-Overview-V3": [
+        {
+          "source": "/BigCreteCalculator/V3/Architecture-V3/Architecutre-Overview-V3",
+          "target": "/Battery-Circuit",
+          "text": "Battery Circuit"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/Boot-SPI-to-FPGA-connection": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Boot-SPI-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/Corsair-DDR3L": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/Corsair-DDR3L",
+          "target": "/FPGA-Clock",
+          "text": "FPGA Clock"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-AC7A200T-1SBG484C-Pinout": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-AC7A200T-1SBG484C-Pinout",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-AC7A200T-1SBG484C-Pinout",
+          "target": "/Power-Subcircuit",
+          "text": "Power Subcircuit"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-AC7A200T-1SBG484C-Pinout",
+          "target": "/Power-Subcircuit",
+          "text": "Power Subcircuit"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/Corsair-DDR3L",
+          "text": "Corsair DDR3L"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/SPI-Memory",
+          "text": "SPI Memory"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/FPGA-AC7A200T-1SBG484C-Pinout",
+          "text": "FPGA AC7A200T-1SBG484C Pinout"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/DDR3-to-FPGA-connection",
+          "text": "DDR3 to FPGA connection"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/SPI-to-FPGA-Connection",
+          "text": "SPI to FPGA Connection"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/Motherboard-to-FPGA-Connection",
+          "text": "Motherboard to FPGA Connection"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/Boot-SPI-to-FPGA-connection",
+          "text": "Boot SPI to FPGA connection"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Clock": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Clock",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/Motherboard-to-FPGA-Connection": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/Motherboard-to-FPGA-Connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/SPI-Memory": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/SPI-Memory",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/SPI-to-FPGA-Connection": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/SPI-to-FPGA-Connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/LCD-Display": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/LCD-Display",
+          "target": "/Motherboard",
+          "text": "Motherboard"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/LCD-Display",
+          "text": "LCD Display"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/LED-+-Driver",
+          "text": "LED + Driver"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/LED-+-Driver",
+          "text": "LED + Driver"
+        }
+      ],
+      "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+          "target": "/Design-Journal",
+          "text": "Design Journal"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+          "target": "/Motherboard",
+          "text": "Motherboard"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+          "target": "/LED-+-Driver",
+          "text": "LED + Driver"
+        }
+      ],
+      "/backup": [
+        {
+          "source": "/backup",
+          "target": "/notes/search",
+          "text": "notes/search"
+        },
+        {
+          "source": "/backup",
+          "target": "/notes/CJK-+-Latex-Support-%E6%B5%8B%E8%AF%95",
+          "text": "CJK + Latex Support"
+        },
+        {
+          "source": "/backup",
+          "target": "/notes/callouts",
+          "text": "Admonition-style callouts"
+        },
+        {
+          "source": "/backup",
+          "target": "/notes/showcase",
+          "text": "amazing gardens that community members"
+        },
+        {
+          "source": "/backup",
+          "target": "/notes/philosophy",
+          "text": "why I made Quartz"
+        },
+        {
+          "source": "/backup",
+          "target": "/notes/setup",
+          "text": "Setup your own digital garden using Quartz"
+        },
+        {
+          "source": "/backup",
+          "target": "/notes/updating",
+          "text": "update"
+        },
+        {
+          "source": "/backup",
+          "target": "/tags/setup",
+          "text": "setup-related notes"
+        },
+        {
+          "source": "/backup",
+          "target": "/notes/troubleshooting",
+          "text": "Troubleshooting and FAQ"
+        }
+      ]
+    },
+    "backlinks": {
+      "/BOM-V2-Rev-1-Electronics": [
+        {
+          "source": "/BigCreteCalculator/Design-Journal",
+          "target": "/BOM-V2-Rev-1-Electronics",
+          "text": "BOM V2 Rev 1 Electronics"
+        }
+      ],
+      "/Battery-Circuit": [
+        {
+          "source": "/BigCreteCalculator/V3/Architecture-V3/Architecutre-Overview-V3",
+          "target": "/Battery-Circuit",
+          "text": "Battery Circuit"
+        }
+      ],
+      "/Boot-SPI-to-FPGA-connection": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/Boot-SPI-to-FPGA-connection",
+          "text": "Boot SPI to FPGA connection"
+        }
+      ],
+      "/Corsair-DDR3L": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/Corsair-DDR3L",
+          "text": "Corsair DDR3L"
+        }
+      ],
+      "/Current-Mirror-Power-Analysis": [
+        {
+          "source": "/BigCreteCalculator/Design-Journal",
+          "target": "/Current-Mirror-Power-Analysis",
+          "text": "Current Mirror Power Analysis"
+        },
+        {
+          "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+          "target": "/Current-Mirror-Power-Analysis",
+          "text": "Current Mirror Power Analysis"
+        }
+      ],
+      "/DDR3-to-FPGA-connection": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/DDR3-to-FPGA-connection",
+          "text": "DDR3 to FPGA connection"
+        }
+      ],
+      "/Design-Journal": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+          "target": "/Design-Journal",
+          "text": "Design Journal"
+        }
+      ],
+      "/FPGA-AC7A200T-1SBG484C-Pinout": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/FPGA-AC7A200T-1SBG484C-Pinout",
+          "text": "FPGA AC7A200T-1SBG484C Pinout"
+        }
+      ],
+      "/FPGA-Board": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Boot-SPI-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-AC7A200T-1SBG484C-Pinout",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Clock",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/Motherboard-to-FPGA-Connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/SPI-Memory",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/SPI-to-FPGA-Connection",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+          "target": "/FPGA-Board",
+          "text": "FPGA Board"
+        }
+      ],
+      "/FPGA-Clock": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/Corsair-DDR3L",
+          "target": "/FPGA-Clock",
+          "text": "FPGA Clock"
+        }
+      ],
+      "/LCD-Display": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/LCD-Display",
+          "text": "LCD Display"
+        }
+      ],
+      "/LED-+-Driver": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/LED-+-Driver",
+          "text": "LED + Driver"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+          "target": "/LED-+-Driver",
+          "text": "LED + Driver"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+          "target": "/LED-+-Driver",
+          "text": "LED + Driver"
+        }
+      ],
+      "/LTSpice-Master-Notes": [
+        {
+          "source": "/BigCreteCalculator/Design-Journal",
+          "target": "/LTSpice-Master-Notes",
+          "text": "LTSpice Master Notes"
+        },
+        {
+          "source": "/BigCreteCalculator/V2/Electrical-Design-V2/Current-Mirror-Power-Analysis",
+          "target": "/LTSpice-Master-Notes",
+          "text": "LTSpice Master Notes"
+        }
+      ],
+      "/Motherboard": [
+        {
+          "source": "/BigCreteCalculator/V1/Electrical-Design-V1/LED-+-Driver",
+          "target": "/Motherboard",
+          "text": "Motherboard"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/LCD-Display",
+          "target": "/Motherboard",
+          "text": "Motherboard"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+          "target": "/Motherboard",
+          "text": "Motherboard"
+        }
+      ],
+      "/Motherboard-to-FPGA-Connection": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/Motherboard-to-FPGA-Connection",
+          "text": "Motherboard to FPGA Connection"
+        }
+      ],
+      "/Power-Architecture-V2": [
+        {
+          "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+          "target": "/Power-Architecture-V2",
+          "text": "Power Architecture V2"
+        },
+        {
+          "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+          "target": "/Power-Architecture-V2",
+          "text": "Power Architecture V2"
+        },
+        {
+          "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+          "target": "/Power-Architecture-V2",
+          "text": "Power Architecture V2"
+        }
+      ],
+      "/Power-Subcircuit": [
+        {
+          "source": "/BigCreteCalculator/Design-Journal",
+          "target": "/Power-Subcircuit",
+          "text": "Power Subcircuit"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-AC7A200T-1SBG484C-Pinout",
+          "target": "/Power-Subcircuit",
+          "text": "Power Subcircuit"
+        },
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-AC7A200T-1SBG484C-Pinout",
+          "target": "/Power-Subcircuit",
+          "text": "Power Subcircuit"
+        }
+      ],
+      "/SPI-Memory": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/SPI-Memory",
+          "text": "SPI Memory"
+        }
+      ],
+      "/SPI-to-FPGA-Connection": [
+        {
+          "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+          "target": "/SPI-to-FPGA-Connection",
+          "text": "SPI to FPGA Connection"
+        }
+      ],
+      "/To-Buy": [
+        {
+          "source": "/BigCreteCalculator/Design-Journal",
+          "target": "/To-Buy",
+          "text": "To Buy"
+        }
+      ],
+      "/V2/Architecture-V2/TOP-Design-V2": [
+        {
+          "source": "/BigCreteCalculator/High-Level-Scope",
+          "target": "/V2/Architecture-V2/TOP-Design-V2",
+          "text": "V2/Architecture V2/TOP Design V2"
+        }
+      ],
+      "/notes/CJK-+-Latex-Support-%E6%B5%8B%E8%AF%95": [
+        {
+          "source": "/backup",
+          "target": "/notes/CJK-+-Latex-Support-%E6%B5%8B%E8%AF%95",
+          "text": "CJK + Latex Support"
+        }
+      ],
+      "/notes/callouts": [
+        {
+          "source": "/backup",
+          "target": "/notes/callouts",
+          "text": "Admonition-style callouts"
+        }
+      ],
+      "/notes/philosophy": [
+        {
+          "source": "/backup",
+          "target": "/notes/philosophy",
+          "text": "why I made Quartz"
+        }
+      ],
+      "/notes/search": [
+        {
+          "source": "/backup",
+          "target": "/notes/search",
+          "text": "notes/search"
+        }
+      ],
+      "/notes/setup": [
+        {
+          "source": "/backup",
+          "target": "/notes/setup",
+          "text": "Setup your own digital garden using Quartz"
+        }
+      ],
+      "/notes/showcase": [
+        {
+          "source": "/backup",
+          "target": "/notes/showcase",
+          "text": "amazing gardens that community members"
+        }
+      ],
+      "/notes/troubleshooting": [
+        {
+          "source": "/backup",
+          "target": "/notes/troubleshooting",
+          "text": "Troubleshooting and FAQ"
+        }
+      ],
+      "/notes/updating": [
+        {
+          "source": "/backup",
+          "target": "/notes/updating",
+          "text": "update"
+        }
+      ],
+      "/tags/setup": [
+        {
+          "source": "/backup",
+          "target": "/tags/setup",
+          "text": "setup-related notes"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "source": "/BigCreteCalculator/Design-Journal",
+      "target": "/Power-Subcircuit",
+      "text": "Power Subcircuit"
+    },
+    {
+      "source": "/BigCreteCalculator/Design-Journal",
+      "target": "/Current-Mirror-Power-Analysis",
+      "text": "Current Mirror Power Analysis"
+    },
+    {
+      "source": "/BigCreteCalculator/Design-Journal",
+      "target": "/LTSpice-Master-Notes",
+      "text": "LTSpice Master Notes"
+    },
+    {
+      "source": "/BigCreteCalculator/Design-Journal",
+      "target": "/To-Buy",
+      "text": "To Buy"
+    },
+    {
+      "source": "/BigCreteCalculator/Design-Journal",
+      "target": "/BOM-V2-Rev-1-Electronics",
+      "text": "BOM V2 Rev 1 Electronics"
+    },
+    {
+      "source": "/BigCreteCalculator/High-Level-Scope",
+      "target": "/V2/Architecture-V2/TOP-Design-V2",
+      "text": "V2/Architecture V2/TOP Design V2"
+    },
+    {
+      "source": "/BigCreteCalculator/V1/Electrical-Design-V1/LED-+-Driver",
+      "target": "/Motherboard",
+      "text": "Motherboard"
+    },
+    {
+      "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+      "target": "/Power-Architecture-V2",
+      "text": "Power Architecture V2"
+    },
+    {
+      "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+      "target": "/Current-Mirror-Power-Analysis",
+      "text": "Current Mirror Power Analysis"
+    },
+    {
+      "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+      "target": "/Power-Architecture-V2",
+      "text": "Power Architecture V2"
+    },
+    {
+      "source": "/BigCreteCalculator/V2/Architecture-V2/TOP-Design-V2",
+      "target": "/Power-Architecture-V2",
+      "text": "Power Architecture V2"
+    },
+    {
+      "source": "/BigCreteCalculator/V2/Electrical-Design-V2/Current-Mirror-Power-Analysis",
+      "target": "/LTSpice-Master-Notes",
+      "text": "LTSpice Master Notes"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Architecture-V3/Architecutre-Overview-V3",
+      "target": "/Battery-Circuit",
+      "text": "Battery Circuit"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Boot-SPI-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/Corsair-DDR3L",
+      "target": "/FPGA-Clock",
+      "text": "FPGA Clock"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/DDR3-to-FPGA-connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-AC7A200T-1SBG484C-Pinout",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-AC7A200T-1SBG484C-Pinout",
+      "target": "/Power-Subcircuit",
+      "text": "Power Subcircuit"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-AC7A200T-1SBG484C-Pinout",
+      "target": "/Power-Subcircuit",
+      "text": "Power Subcircuit"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+      "target": "/Corsair-DDR3L",
+      "text": "Corsair DDR3L"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+      "target": "/SPI-Memory",
+      "text": "SPI Memory"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+      "target": "/FPGA-AC7A200T-1SBG484C-Pinout",
+      "text": "FPGA AC7A200T-1SBG484C Pinout"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+      "target": "/DDR3-to-FPGA-connection",
+      "text": "DDR3 to FPGA connection"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+      "target": "/SPI-to-FPGA-Connection",
+      "text": "SPI to FPGA Connection"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+      "target": "/Motherboard-to-FPGA-Connection",
+      "text": "Motherboard to FPGA Connection"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Board",
+      "target": "/Boot-SPI-to-FPGA-connection",
+      "text": "Boot SPI to FPGA connection"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/FPGA-Clock",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/Motherboard-to-FPGA-Connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/SPI-Memory",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/FPGA/SPI-to-FPGA-Connection",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/LCD-Display",
+      "target": "/Motherboard",
+      "text": "Motherboard"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+      "target": "/LCD-Display",
+      "text": "LCD Display"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+      "target": "/LED-+-Driver",
+      "text": "LED + Driver"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Motherboard",
+      "target": "/LED-+-Driver",
+      "text": "LED + Driver"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+      "target": "/Design-Journal",
+      "text": "Design Journal"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+      "target": "/Motherboard",
+      "text": "Motherboard"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+      "target": "/FPGA-Board",
+      "text": "FPGA Board"
+    },
+    {
+      "source": "/BigCreteCalculator/V3/Electrical-Design-V3/Top-Level-Electrical",
+      "target": "/LED-+-Driver",
+      "text": "LED + Driver"
+    },
+    {
+      "source": "/backup",
+      "target": "/notes/search",
+      "text": "notes/search"
+    },
+    {
+      "source": "/backup",
+      "target": "/notes/CJK-+-Latex-Support-%E6%B5%8B%E8%AF%95",
+      "text": "CJK + Latex Support"
+    },
+    {
+      "source": "/backup",
+      "target": "/notes/callouts",
+      "text": "Admonition-style callouts"
+    },
+    {
+      "source": "/backup",
+      "target": "/notes/showcase",
+      "text": "amazing gardens that community members"
+    },
+    {
+      "source": "/backup",
+      "target": "/notes/philosophy",
+      "text": "why I made Quartz"
+    },
+    {
+      "source": "/backup",
+      "target": "/notes/setup",
+      "text": "Setup your own digital garden using Quartz"
+    },
+    {
+      "source": "/backup",
+      "target": "/notes/updating",
+      "text": "update"
+    },
+    {
+      "source": "/backup",
+      "target": "/tags/setup",
+      "text": "setup-related notes"
+    },
+    {
+      "source": "/backup",
+      "target": "/notes/troubleshooting",
+      "text": "Troubleshooting and FAQ"
+    }
+  ]
+}

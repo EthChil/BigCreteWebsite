@@ -1,0 +1,31 @@
+// Add your own CSS here!
+
+:root {
+  --light: #000000;
+  --dark: #ffffc0;
+  --secondary: #fff11f;
+  --tertiary: #fff11f;
+  --visited: #afbfc9;
+  --primary: #f28482;
+  --gray: #d2d2d2;
+  --lightgray: #c4a000;
+  --outlinegray: #dadada;
+  --million-progress-bar-color: var(--secondary);
+  --highlighted: rgb(255, 241, 31);
+}
+
+[saved-theme="dark"] {
+  --light: #1e1e21 !important;
+  --dark: #fbfffe !important;
+  --secondary: #6ab5ff !important;
+  --visited: #ffef21 !important;
+  --tertiary: #fff417 !important;
+  --primary: #f58382 !important;
+  --gray: #d4d4d4 !important;
+  --lightgray: #292633 !important;
+  --outlinegray: #343434 !important;
+  --highlighted: #574010;
+}
+
+
+
