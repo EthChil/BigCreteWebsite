@@ -1,4 +1,0 @@
-In Altium export as PDF3D and then in the dropdown choose to make it an obj. 
-in the settings don't merge the mesh turn off internal layers and export.
-The resultant file will have textures and can then be opened in blender through the import menu.
-This is then exported to a gltf which is opened in the website.

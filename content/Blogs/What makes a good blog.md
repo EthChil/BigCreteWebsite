@@ -1,6 +1,5 @@
 ---
 title: "What makes a good blog?"
-draft: "false"
 layout: "Blogs"
 ---
 
@@ -8,7 +7,7 @@ Hiya neighbour, welcome to the Big Crete Engineering blog. As the first post, th
 who I am, and what to expect from my blog. This will be the first of many blog posts covering a range of topics from my 
 personal life to engineering.
 
-[//]: # (<img class="center-picture sixty-per" src="./Assets/Icons/mrRogers.jpeg">)
+<img class="center-picture sixty-per" src="./assets/Icons/mrRogers.jpeg">
 
 ### What is Big Crete?
 
@@ -55,7 +54,7 @@ concrete. But from there it has taken on more meaning, combining the name with a
 convey what I’m all about which is building things. Just like how concrete is an iconic technology of the modern world 
 we live in, I hope that Big Crete will stand for projects equally as pivotal (unlikely, but a boy can dream).
 
-I also want to thank Clayton Haight (clayhaight.com) who graciously open sourced his blog format and agreed to let me 
+I also want to thank [Clayton Haight](https://clayhaight.com) who graciously open sourced his blog format and agreed to let me 
 use it for my own. So, if you are interested in making your own blog and want an easy starting point to feel free to 
 copy this format but make sure to credit Clayton not myself.
 

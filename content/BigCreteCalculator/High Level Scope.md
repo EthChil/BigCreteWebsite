@@ -1,6 +1,5 @@
 ---
 title: "High Level Scope"
-draft: "false"
 ---
 
 V1 - Not really a revision but rather breakout boards for each of the circuits that's not space constrained and easy to debug, this proves out V2
