@@ -1,6 +1,7 @@
 ---
 title: "What makes a good blog?"
 layout: "Blogs"
+date: 2022-02-10
 ---
 
 Hiya neighbour, welcome to the Big Crete Engineering blog. As the first post, this will act as an introduction to Big Crete, 
