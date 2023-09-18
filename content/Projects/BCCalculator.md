@@ -34,12 +34,13 @@ This chip is a 484 pin BGA package with 1mm pitch, never have I been able to sol
 
 # V2
 ## Mechanical
-
+TODO
 
 ## Hardware
-
+TODO
 
 ## Digital Design
-
+TODO
 
 ## Firmware
+TODO
