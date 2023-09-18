@@ -27,7 +27,7 @@ From this I designed what would be the most ideal design. First I wanted it to b
 
 From there I started with the FPGA designing the baord and sourcing components. At the time when I was designing this we were in the midst of the chip shortage and FPGAs were in short supply, I was luckily able to find a single Xilinx Artix-7 A200T available at $300 CAD the highest end Artix available on the market with a sexy exposed die (NSFW).
 
-<img class="center-picture sixty-per" src="Attachments/A200T.jpeg">
+<img class="center-picture sixty-per" src="./Projects/Attachments/A200T.jpg">
 
 This chip is a 484 pin BGA package with 1mm pitch, never have I been able to solder a BGA part succesfully on the first go with my [[Big Crete Reflow Oven]] and so my plan for this design was to get it professionally assembled especially since the FPGA is $300 and it has 484 balls. 
 

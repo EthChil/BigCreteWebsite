@@ -162,7 +162,7 @@ function init() {
     ];
 
     let spray_paint_materials = [
-        new THREE.MeshStandardMaterial({ map: SP_BIG_CRETE_CALCULATOR, transparent: true  }),
+        new THREE.MeshStandardMaterial({ map: SP_BIG_CRETE_CALCULATOR, transparent: true}),
         new THREE.MeshStandardMaterial({ map: SP_THROW_BOT, transparent: true  }),
         new THREE.MeshStandardMaterial({ map: SP_FPGA_PSU, transparent: true  }),
         new THREE.MeshStandardMaterial({ map: SP_BRACKET_BOT, transparent: true  }),
@@ -223,6 +223,7 @@ function init() {
         scene.add(project_window);
 
         let project_spray_paint = new THREE.Mesh(spray_paint_geometry, spray_paint_materials[i]);
+        project_spray_paint.name = "brickNum" + i;
         project_spray_paint.rotation.y = (i)/2 * Math.PI;
         if(i%4 == 0)
             project_spray_paint.position.set(1.75, -4*i, 3.95);
