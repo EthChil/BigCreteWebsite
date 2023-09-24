@@ -10,6 +10,12 @@ button:hover{
 
 h1 {
     font-size: 10vmin;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 button {
@@ -75,6 +81,13 @@ html
     padding-left: 10%;
     padding-right: 10%;
     will-change: transform;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 ul {
@@ -86,6 +99,13 @@ ul {
 {
     font-weight: 100;
     font-size: 3vmin;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     /*text-transform: none;*/
 }
 

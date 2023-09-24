@@ -434,6 +434,28 @@ function init() {
             if(clicked) {
                 if (intersects[0].object.name === "brickNum0") {
                     window.location.href = "Projects/BCCalculator";
+                } else if(intersects[0].object.name === "brickNum1") {
+                    window.location.href = "Projects/Throwbot";
+                } else if(intersects[0].object.name === "brickNum2") {
+                    window.location.href = "Projects/FPGAPowerSupply";
+                } else if(intersects[0].object.name === "brickNum3") {
+                    window.location.href = "Projects/Bracketbot";
+                } else if(intersects[0].object.name === "brickNum4") {
+                    window.location.href = "Projects/FPGAPong";
+                } else if(intersects[0].object.name === "brickNum5") {
+                    window.location.href = "Projects/LixieClock";
+                } else if(intersects[0].object.name === "brickNum6") {
+                    window.location.href = "Projects/BCFidgetCube";
+                } else if(intersects[0].object.name === "brickNum7") {
+                    window.location.href = "Projects/Ventilator";
+                } else if(intersects[0].object.name === "brickNum8") {
+                    window.location.href = "Projects/Fold3r";
+                } else if(intersects[0].object.name === "brickNum9") {
+                    window.location.href = "Projects/Followfocus";
+                } else if(intersects[0].object.name === "brickNum10") {
+                    window.location.href = "Projects/Autonoprint";
+                } else if(intersects[0].object.name === "brickNum11") {
+                    window.location.href = "Projects/Rebolt";
                 }
                 clicked = false;
             }
