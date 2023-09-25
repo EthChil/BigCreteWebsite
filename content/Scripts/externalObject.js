@@ -1,8 +1,8 @@
 //TODO: when you click on a board it should flip
 
     import * as THREE from 'three';
-    import * as GLTF from 'gltf';
-    import * as ROOM from 'room';
+    // import * as GLTF from 'gltf';
+    // import * as ROOM from 'room';
 
 
 /**
