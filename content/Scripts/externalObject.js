@@ -39,6 +39,7 @@ render();
 
 function init() {
     var clicked = false;
+    var touchStart;
 
     canvas = document.querySelector('canvas.webgl')
 
@@ -335,15 +336,29 @@ function init() {
     /**
      * object ray cast selection
      */
-    window.addEventListener( 'click', () =>
-    {
+    window.addEventListener('click', handleClick);
+    canvas.addEventListener('touchstart', handleTouchStart);
+    canvas.addEventListener('touchmove', handleTouchMove);
+    
+    function handleTouchStart(event) {
+        touchStart = event.touches[0].clientY;
+    }
+    
+    function handleTouchMove(event) {
+        var touchEnd = event.touches[0].clientY;
+        var touchDiff = touchEnd - touchStart;
+    
+        // Check if the touch movement is greater than a certain threshold
+        if (Math.abs(touchDiff) < 10) {
+            clicked = true;
+        }
+    }
+    
+    function handleClick() {
         clicked = true;
-    })
+    }
 
-    window.addEventListener('touchstart', () => 
-    {
-        clicked = true;
-    })
+
 
     /**
      * Sizes
