@@ -340,6 +340,11 @@ function init() {
         clicked = true;
     })
 
+    window.addEventListener('touchstart', () => 
+    {
+        clicked = true;
+    })
+
     /**
      * Sizes
      */
