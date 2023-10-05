@@ -8,7 +8,7 @@ Hiya neighbour, welcome to the Big Crete Engineering blog. As the first post, th
 who I am, and what to expect from my blog. This will be the first of many blog posts covering a range of topics from my 
 personal life to engineering.
 
-<img class="center-picture sixty-per" src="./assets/Icons/mrRogers.jpeg">
+<img class="center-picture sixty-per" src="./Assets/Icons/mrRogers.jpeg">
 
 ### What is Big Crete?
 
