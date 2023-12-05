@@ -4,41 +4,59 @@ layout: "Blogs"
 date: 2022-02-10
 ---
 
-Hiya neighbour, welcome to the Big Crete Engineering blog. As the first post, this will act as an introduction to Big Crete Engineering,
-who we are and what you can come to expect from us as an organization. 
+Hiya neighbour, welcome to the Big Crete Engineering blog. As the first post, this will act as an introduction to Big Crete, 
+who I am, and what to expect from my blog. This will be the first of many blog posts covering a range of topics from my 
+personal life to engineering.
 
 <img class="center-picture sixty-per" src="./Assets/Icons/mrRogers.jpeg">
 
-## What is Big Crete Engineering?
+### What is Big Crete?
 
-In a world where technology continuously redefines the boundaries of what's possible, Big Crete Engineering emerges as a beacon of innovation and daring. This electronics company, far from being just another player in the vast tech landscape, distinguishes itself through a relentless pursuit of the cutting edge, challenging the status quo of engineering with every project it undertakes.
+To fully understand what Big Crete is, I first need to give some background on my personal approach to engineering and 
+the role it plays in my life. I have been passionate about engineering for as long as I can remember and is the primary 
+lens through which I view the world. Just a warning what comes next is purely philosophical I am by no means a 
+philosopher so it might just sound like a garbled unintelligible mess.
 
-At its core, Big Crete Engineering is an embodiment of the bold and the new. The company's focus lies at the intersection of robotics and construction, a field ripe with potential yet largely unexplored. By delving into how robotics can augment and revolutionize construction processes, Big Crete is not just contributing to the industry but is reshaping it.
+All living things on this planet are faced with hardship and challenge. The downfall for of a finite universe means 
+finite resources and as a result all living creatures will face the challenge this presents. Whether that be predators 
+who see your species as a recourse or the actual materials around you there is always a limit that creatures are trying 
+to push beyond, in the futile goal of infinite population and lifespans. This is the major driver of life on earth and 
+through the process of evolution animals pursue this goal, for humans we are quite the same. Unlike most living beings’ 
+humanity is in a unique position where we can artificially evolve through technology, actively shaping the world around
+us to improve our conditions and lives at a pace that puts traditional genetic evolution to shame. All people are 
+indebted to those who came before producing the technologies and ideas required to make our lives that much easier and 
+enjoyable. But even where we stand today on the shoulders of giants, we still yearn to break free from the shackles of 
+a finite universe to fill our infinite appetite. Whether or not we will reach this ideal is a different conversation
+altogether. To me there is nothing more noble someone can do during their time here than to try and contribute to 
+society and help to improve the lives of others not only today but tomorrow and beyond. Scientists, engineers, 
+mathematicians, philosophers, and many others pursue this goal endlessly. To me engineering in it’s purest is leveraging 
+our understanding of the world around us to practically create things that improve the lives of others. That’s not to 
+say that engineering is the only way to pursue this goal, the structure of our society, market systems, culture are all 
+contributors to enabling the world around us. So as much as I hate to say it yes politicians are pursuing the noble goal 
+of better distributing resources to those who need it to enable an improved future for all (at least in theory) in 
+practice this is not always the case.
 
-However, Big Crete's ambitions are not confined to the construction industry alone. In a strategic move to refine their design and technology skills, the company has ventured into the consumer electronics market, introducing high-end calculators and cameras. These products are more than mere gadgets; they are a testament to Big Crete's commitment to excellence and precision in design and functionality.
+There is an adage give a man a fish, and you feed him for a day. Teach a man to fish you feed him for a lifetime. 
+I think we should expand upon this: Engineer the tools for him to catch more than any man before and you feed his town 
+forever (but of course a finite world means eventually you could fish beyond what the ocean supplies). I enjoy my work 
+because it allows me as one person to improve the lives of populations for time to come. The job of the engineer is to 
+be creative and find solutions to the biggest problems we face, ultimately engineers are problem solvers leveraging all 
+the knowledge we have accumulated building things that push humanity forward.
 
-### The Vision of Big Crete Engineering
+So, circling this back to Big Crete, my passion for engineering and creating things. You now understand my passion and 
+my drive. Most engineering is done within companies who produce solutions for the world, this means that companies have 
+taken the time to figure out how to brand and become recognizable, we can relate to a company just like how we can 
+relate to individuals. My hope is that branding my projects under the Big Crete name as if it were a company will give 
+it a life bigger than me and maybe lend it more credibility.
 
-The vision of Big Crete is a fusion of foresight and innovation. The company envisions a future where robotics seamlessly integrates into construction, enhancing efficiency, safety, and precision. This vision is not just about bringing robots to construction sites; it's about creating a synergy between human skill and robotic efficiency, where each complements the other to achieve what was once thought impossible.
+### Cool story bro, what about the name?
+Well, the name is mostly an inside joke but basically it has nothing to do with engineering and is a slang version of 
+concrete. But from there it has taken on more meaning, combining the name with a construction themed logo is meant to 
+convey what I’m all about which is building things. Just like how concrete is an iconic technology of the modern world 
+we live in, I hope that Big Crete will stand for projects equally as pivotal (unlikely, but a boy can dream).
 
-### Consumer Electronics: A Stepping Stone to Mastery
+I also want to thank [Clayton Haight](https://clayhaight.com) who graciously open sourced his blog format and agreed to let me 
+use it for my own. So, if you are interested in making your own blog and want an easy starting point to feel free to 
+copy this format but make sure to credit Clayton not myself.
 
-Big Crete's foray into consumer electronics with calculators and cameras serves a dual purpose. Firstly, it's a platform for the company to showcase its technological prowess. The calculators are not just tools for computation; they are marvels of engineering, combining sleek design with advanced features that cater to the needs of professionals and enthusiasts alike. The cameras, on the other hand, are a blend of aesthetic appeal and cutting-edge technology, offering unparalleled image quality and user experience.
-
-Secondly, these consumer electronics serve as a training ground for Big Crete's engineering team. Every challenge overcome in the design and production of these devices sharpens their skills, preparing them for more complex projects in robotics and construction technology.
-
-### Challenging the Status Quo
-
-What truly sets Big Crete apart is its willingness to challenge the established norms of engineering. In a sector often constrained by traditional approaches, Big Crete dares to think differently. This mindset is evident in every aspect of their work, from the innovative features of their calculators to the advanced technology of their cameras, and most importantly, in their groundbreaking approach to integrating robotics into construction.
-
-### Collaborations and Partnerships
-
-Recognizing that collaboration is key to innovation, Big Crete Engineering actively seeks partnerships with like-minded companies and research institutions. These collaborations not only bring in fresh perspectives but also help in pooling resources and expertise, accelerating the pace of innovation and development.
-
-### Looking to the Future
-
-As Big Crete Engineering continues to evolve, its focus remains steadfast on pushing the boundaries of what's possible in technology and engineering. The journey ahead is filled with challenges, but for a company that thrives on innovation and the thrill of the new, these challenges are but stepping stones to greater achievements.
-
-In conclusion, Big Crete Engineering is not just an electronics company; it's a hub of innovation, a place where the future of construction and consumer electronics is being shaped today. With its bold vision, relentless pursuit of excellence, and willingness to challenge the norm, Big Crete is poised to leave an indelible mark on the world of technology and engineering.
-
-So welcome to Big Crete, make yourself at home and be sure to check in often and feel free to reach out, we would love to chat.
+So welcome to Big Crete, make yourself at home and be sure to check in often and feel free to reach out, I’d love to chat.
